@@ -1,0 +1,15 @@
+//What gets printed?
+
+#include <stdio.h>
+
+typedef struct a { unsigned a : 1, : 0, b : 1 } a;
+typedef struct b { unsigned a : 1, b : 1 } b;
+
+int main(void)
+{
+	for ( ; ; ) {
+		printf("x.a = %2d, x.b = %2d\n", x.a++, x.b++);
+	}
+
+	return 0;
+}

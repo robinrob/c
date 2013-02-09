@@ -1,0 +1,14 @@
+/*
+ * testError.c
+ *
+ *  Created on: Jan 5, 2010
+ *      Author: user
+ */
+
+#incl <stdixx.h>
+
+int main(void)
+{
+	printf("Try me.\n");
+	return 0;
+}

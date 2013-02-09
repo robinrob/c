@@ -1,0 +1,25 @@
+/* Exercise to make sea shells message
+ * seaShells.c
+ *
+ *  Created on: Dec 18, 2009
+ *      Author: user
+ */
+
+#include <stdio.h>
+
+int main(void)
+{
+	printf("\n");
+	printf("%s\n", "She sells sea shells by the sea shore");
+	printf("%s\n%s\n%s\n", "She sells", "sea shells", "by the sea shore");
+	printf("%s\n%s%10s%s\n%s%10s%s\n%s%10s%s\n%s%10s%s\n%s\n",
+			"##############",
+			"# ", "She sells", " #",
+			"# ", "sea shells", " #",
+			"# ", "by the sea", " #",
+			"# ", "shore", " #",
+			"##############");
+	printf("\n");
+
+	return 0;
+}

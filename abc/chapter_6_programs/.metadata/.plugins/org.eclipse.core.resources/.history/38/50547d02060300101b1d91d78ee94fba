@@ -1,0 +1,13 @@
+/*
+ * fct.c
+ *
+ *  Created on: Dec 8, 2010
+ *      Author: user
+ */
+
+#include "find_root.h"
+
+dbl f(dbl x)
+{
+	return 1.0 / x;
+}

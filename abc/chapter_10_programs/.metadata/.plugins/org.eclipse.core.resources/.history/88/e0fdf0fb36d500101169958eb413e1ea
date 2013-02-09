@@ -1,0 +1,23 @@
+/* Creation functions for Singly-Linked Lists. */
+
+#include "sllist.h"
+
+/* Creates a DATA list from an array of DATA values
+ * and returns a reference to the head of the list. */
+NODE* create_list(DATA *array, int n)
+{
+	int i;
+	NODE *p, *list;
+	p = malloc(sizeof(NODE));
+	list = p;
+
+	for (i = 0; i < n - 1; ++i) {
+		p -> data = *(array + i);
+		p -> next = malloc(sizeof(NODE));
+		p = p -> next;
+	}
+	p -> data = *(array + n - 1);
+	p -> next = NULL;
+
+	return list;
+}

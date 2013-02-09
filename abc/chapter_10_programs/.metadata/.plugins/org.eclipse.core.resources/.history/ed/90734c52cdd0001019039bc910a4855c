@@ -1,0 +1,10 @@
+/* Mutually dependent struct definitions ... */
+
+
+struct spouse {
+	int age;
+	char name[10];
+	spouse spouse;
+};
+
+

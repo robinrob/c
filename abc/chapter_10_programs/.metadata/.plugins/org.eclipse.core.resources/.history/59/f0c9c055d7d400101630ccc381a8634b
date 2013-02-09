@@ -1,0 +1,16 @@
+/* Checking functions for Doubly-Linked Lists. */
+
+/* Checks to see whether a list is a cycle. */
+boolean check_cycle(NODE *list)
+{
+	int head_ad = (int) list;
+	while (list -> next != NULL) {
+		list = list -> next;
+		if (((int) list) == head_ad) {
+			return true;
+		}
+	}
+	return false;
+}
+
+

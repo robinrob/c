@@ -1,0 +1,6 @@
+#include <stdio.h>
+#include <ctype.h>
+
+void swap_string(char **p, char **q);
+void print_list(char **a, int n);
+int string_val(char *s);

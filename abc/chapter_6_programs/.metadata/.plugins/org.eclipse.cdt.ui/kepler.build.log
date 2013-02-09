@@ -1,0 +1,26 @@
+
+**** Build of configuration Debug for project kepler ****
+
+make all 
+Building file: ../bisection.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"bisection.d" -MT"bisection.d" -o"bisection.o" "../bisection.c"
+Finished building: ../bisection.c
+ 
+Building file: ../kepler.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"kepler.d" -MT"kepler.d" -o"kepler.o" "../kepler.c"
+Finished building: ../kepler.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o"main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: kepler
+Invoking: GCC C Linker
+gcc  -o"kepler"  ./bisection.o ./kepler.o ./main.o   
+./kepler.o: In function `kepler':
+../kepler.c:12: undefined reference to `sin'
+collect2: ld returned 1 exit status
+make: *** [kepler] Error 1

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?>
+<?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" version="2.0">
+
+<channel>
+	<title>Force.com Blogs</title>
+	
+	<link>http://blogs.developerforce.com</link>
+	<description/>
+	<lastBuildDate>Tue, 20 Dec 2011 23:26:21 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+		<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://feeds.feedburner.com/SforceBlog" rel="self" type="application/rss+xml"/><feedburner:info uri="sforceblog"/><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/><feedburner:emailServiceId>SforceBlog</feedburner:emailServiceId><feedburner:feedburnerHostname>http://feedburner.google.com</feedburner:feedburnerHostname><feedburner:feedFlare href="http://add.my.yahoo.com/rss?url=http%3A%2F%2Ffeeds.feedburner.com%2FSforceBlog" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif">Subscribe with My Yahoo!</feedburner:feedFlare><feedburner:feedFlare href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Ffeeds.feedburner.com%2FSforceBlog" src="http://www.newsgator.com/images/ngsub1.gif">Subscribe with NewsGator</feedburner:feedFlare><feedburner:feedFlare href="http://feeds.my.aol.com/add.jsp?url=http%3A%2F%2Ffeeds.feedburner.com%2FSforceBlog" src="http://o.aolcdn.com/favorites.my.aol.com/webmaster/ffclient/webroot/locale/en-US/images/myAOLButtonSmall.gif">Subscribe with My AOL</feedburner:feedFlare><feedburner:feedFlare href="http://www.bloglines.com/sub/http://feeds.feedburner.com/SforceBlog" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare><feedburner:feedFlare href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Ffeeds.feedburner.com%2FSforceBlog" src="http://www.netvibes.com/img/add2netvibes.gif">Subscribe with Netvibes</feedburner:feedFlare><feedburner:feedFlare href="http://fusion.google.com/add?feedurl=http%3A%2F%2Ffeeds.feedburner.com%2FSforceBlog" src="http://buttons.googlesyndication.com/fusion/add.gif">Subscribe with Google</feedburner:feedFlare><feedburner:feedFlare href="http://www.pageflakes.com/subscribe.aspx?url=http%3A%2F%2Ffeeds.feedburner.com%2FSforceBlog" src="http://www.pageflakes.com/ImageFile.ashx?instanceId=Static_4&amp;fileName=ATP_blu_91x17.gif">Subscribe with Pageflakes</feedburner:feedFlare><item>
+		<title>Mobile SDK Getting Started Articles Now Live</title>
+		<link>http://feedproxy.google.com/~r/SforceBlog/~3/-vKK8-8NNXY/mobile-sdk-getting-started-articles-now-live.html</link>
+		<comments>http://blogs.developerforce.com/developer-relations/2011/12/mobile-sdk-getting-started-articles-now-live.html#comments</comments>
+		<pubDate>Tue, 20 Dec 2011 23:26:21 +0000</pubDate>
+		<dc:creator>Quinton Wall</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[Database.com]]></category>
+		<category><![CDATA[force.com]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[mobile]]></category>
+
+		<guid isPermaLink="false">http://26.7163</guid>
+		<description><![CDATA[<a href="http://blogs.developerforce.com/developer-relations/2011/12/mobile-sdk-getting-started-articles-now-live.html"><img align="left" hspace="5" width="150" src="http://blogs.developerforce.com/developer-relations/files/2011/12/mzl.xlurkszo-208x300.jpg" class="alignleft wp-post-image tfe" alt="" title="" /></a>Santa has come early for mobile developers. Two new Getting Started articles are now live on http://developer.force.com/mobilesdk]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s kinda like Christmas here at the Devforce team. It was only a few weeks ago that the official Mobile SDK for iOS and Android were launched, and now two new Getting Started articles have been added to our <a href="http://wiki.developerforce.com/page/MobileSDK" target="_blank">mobile site</a> &#8211; all in time for the Christmas break! Yes, that&#8217;s right, now you can take your shiny new iPad, iphone, or Android tablet etc. out for a spin by writing some cool apps for <a href="http://www.force.com" target="_blank">Force.com</a> and <a href="http://www.database.com" target="_blank">Database.com</a>.</p>
+<p>Forget the over-eating, reconnecting with family, and football. Tis the season for building mobile apps in the cloud!</p>
+<p><a class="overlay" href="http://blogs.developerforce.com/developer-relations/files/2011/12/mzl.xlurkszo.jpeg"><img class="alignright size-medium wp-image-7184" src="http://blogs.developerforce.com/developer-relations/files/2011/12/mzl.xlurkszo-208x300.jpg" alt="" width="208" height="300" /></a>If you have been writing mobile apps already with Mobile toolkits, these have now been super-seeded by the Mobile SDKs posted on the <a href="https://github.com/forcedotcom" target="_blank">official force.com GitHub repository</a>.  As of today, the old mobile toolkit github repositories have been removed, and the associated articles have gone to a better place. If you have any existing bookmarks, please update them to point to the Mobile SDK page on developer.force.com. You can still get a bunch of great code samples, and toolkits from the <a href="https://github.com/developerforce" target="_blank">developerforce GitHub repository</a>, but because the Mobile SDKs are officially supported by Salesforce.com, these now reside on the force.com repository.</p>
+<p>Now if only Santa can tear himself away from his new geo-location-aware, social mobile app that stores the naughty-and-nice list on Database.com, (rumor is that he used the mobile SDKs), and bring us some snow here in the San Francisco area, this will be the best Christmas ever.</p>
+<p>Happy Holidays to all the mobile developers out there!</p>
+<p>&nbsp;</p>
+<img src="http://feeds.feedburner.com/~r/SforceBlog/~4/-vKK8-8NNXY" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blogs.developerforce.com/developer-relations/2011/12/mobile-sdk-getting-started-articles-now-live.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://blogs.developerforce.com/developer-relations/2011/12/mobile-sdk-getting-started-articles-now-live.html</feedburner:origLink></item>
+		<item>
+		<title>Thoughts on UI architectures</title>
+		<link>http://feedproxy.google.com/~r/SforceBlog/~3/HGba3DCzdRo/thoughts-on-ui-architectures.html</link>
+		<comments>http://blogs.developerforce.com/developer-relations/2011/12/thoughts-on-ui-architectures.html#comments</comments>
+		<pubDate>Tue, 20 Dec 2011 17:58:59 +0000</pubDate>
+		<dc:creator>Sandeep Bhanot</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://26.7104</guid>
+		<description><![CDATA[<a href="http://blogs.developerforce.com/developer-relations/2011/12/thoughts-on-ui-architectures.html"><img align="left" hspace="5" width="150" src="http://blogs.developerforce.com/developer-relations/files/2011/12/Picture1-1024x474.png" class="alignleft wp-post-image tfe" alt="" title="" /></a>Recently, I came across a very interesting article that got me thinking (not always an easy thing to do). The post was by a member of the LinkedIn Engineering team and it described their move away from a  a Java Servlet/JSP stack to a JavaScript tem]]></description>
+			<content:encoded><![CDATA[Recently, I came across a very interesting article that got me thinking (not always an easy thing to do). The post was by a member of the LinkedIn Engineering team and it described their move away from a  a Java Servlet/JSP stack to a JavaScript tem<img src="http://feeds.feedburner.com/~r/SforceBlog/~4/HGba3DCzdRo" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blogs.developerforce.com/developer-relations/2011/12/thoughts-on-ui-architectures.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://blogs.developerforce.com/developer-relations/2011/12/thoughts-on-ui-architectures.html</feedburner:origLink></item>
+		<item>
+		<title>Visual Contacts with Visualforce &amp; CSS3</title>
+		<link>http://feedproxy.google.com/~r/SforceBlog/~3/7dfqYgBi94g/visual-contacts-with-visualforce-and-css3.html</link>
+		<comments>http://blogs.developerforce.com/developer-relations/2011/12/visual-contacts-with-visualforce-and-css3.html#comments</comments>
+		<pubDate>Tue, 20 Dec 2011 00:08:03 +0000</pubDate>
+		<dc:creator>Quinton Wall</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[html5]]></category>
+		<category><![CDATA[quinton wall]]></category>
+
+		<guid isPermaLink="false">http://26.7109</guid>
+		<description><![CDATA[<a href="http://blogs.developerforce.com/developer-relations/2011/12/visual-contacts-with-visualforce-and-css3.html"><img align="left" hspace="5" width="150" src="http://blogs.developerforce.com/developer-relations/files/2011/12/custom-button-1-300x186.png" class="alignleft wp-post-image tfe" alt="" title="" /></a>Visualforce is a fantastic container for other web libraries and frameworks such as jQuery, CSS3, and HTML5. Here is a unique way to display Contacts within Salesforce.com]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been working on code and content updates to our Force.com Architecture Workshop over the past few weeks. Today I was working on the Visualforce section. It&#8217;s easy to forget that Visualforce is a container for just about any web library you can think of. Too often we get stuck on the 80+ tags provided by Salesforce. But in the world of jQuery, HTML5, CSS3 etc, we can do some really cool things.</p>
+<p>I&#8217;ll be the first to admit I am not a &#8216;scripting&#8217; expert, but it doesn&#8217;t take much work to combine some style, with Salesforce data to produce something like this:</p>
+<div style="text-align:right;"><a style="color:#aaa;font-size:9px" href="http://www.clickonf5.org/" title="IFRAME Embed for Youtube Free WordPress Plugin" target="_blank">IFRAME Embed for Youtube</a></div>
+<p>&nbsp;</p>
+<p>The effect is pretty cool, and amazingly simple to do. Let&#8217;s start with the controller extension. There is nothing fancy here, just grab all the Contacts for a particular Account:</p>
+<p>&nbsp;</p>
+<pre>public class AccountsVisualContacts {
+
+    public Account acct {get; set;}
+    public Id acctid {get; set;}
+    public List&lt;Contact&gt; allContacts { get; set;}
+
+     public AccountsVisualContacts(ApexPages.StandardController stdController) {
+        this.acct = (Account)stdController.getRecord();
+         allContacts = [select id, Name, FirstName, LastName, Wiki_Link__c, Image_URL__c from Contact where Accountid = :acct.id];
+    }
+}</pre>
+<p>Now, we can add the Visualforce page. I<a href="http://24ways.org/2009/going-nuts-with-css-transitions" target="_blank"> &#8216;borrowed&#8217; the CSS from the net</a>, and added it to the top of my Visualforce page. The rest of the code is leveraging the styles defined within an apex:repeat tag. The only other trick here to include a variable to dynamically increment a counter to allow me to reference the correct CSS style. For this simple example, I am using a predefined number of styles, but there is no reason I could not use the same incrementing variable trick to dynamically set the width and height of my polaroids.</p>
+<p>You will also notice that I am using the standard Account controller, and my custom controller as an extension. Using the standard Account controller allows me to link directly to my Visualforce page from a custom button on the Account layout. We&#8217;ll see why this is important a bit later. I also added a custom field on the Contact object, Image_URL__c to point to an image source on the internet (specifically, images from wikipedia as we can be pretty comfortable they are not going anywhere)</p>
+<pre>&lt;apex:page standardController="Account" extensions="AccountsVisualContacts" sidebar="false" &gt;
+
+    &lt;style type="text/css"&gt;
+
+    body {
+        background-color: #E9E9E9;
+        color: #333;
+        font-family:"Lucida handwriting", "Snell Roundhand", "Helvetica Neue",Arial,Helvetica,sans-serif;
+        font-size: 16px;
+    }
+
+    .amp {
+        font-family:Garamond,Baskerville,Georgia,serif !important;
+        font-style:italic;
+        font-weight:normal;
+        border: none;
+    }
+
+    a.polaroid {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        padding: 10px 10px 20px 10px;
+        width: 150px;
+        border: 1px solid #BFBFBF;
+        background-color: white;
+        z-index: 2;
+        font-size: 0.7em;
+        -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+        -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+        box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+        -webkit-transition: -webkit-transform 0.5s ease-in;
+    }
+    a.polaroid:hover,
+    a.polaroid:focus,
+    a.polaroid:active {
+        z-index: 999;
+        border-color: #6A6A6A;
+        -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+        -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+        box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    .polaroid img {
+        margin: 0 0 15px;
+        width: 150px;
+        height: 150px;
+    }
+
+    a img {
+        border: none;
+        display: block;
+    }
+
+    .photo-album {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 70em;
+        height: 450px;
+        margin-top: 5em;
+        min-width: 800px;
+        max-width: 900px;
+    }
+    .photo-album .polaroid {
+        position: absolute;
+    }
+    .photo-album h1 {
+        position: absolute;
+        z-index: 5;
+        top: 150px;
+        text-align: center;
+        width: 100%;
+        line-height: 1.9;
+    }
+    .photo-album h1 span {
+        background-color: white;
+        font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+        padding: 0.4em 0.8em 0.3em 0.8em;
+        -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+        -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+        box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+        border: 1px solid #6A6A6A;
+    }
+    .photo-album .small {
+        width: 75px;
+        padding: 6px 6px 12px 6px;
+        font-size: 0.6em;
+    }
+    .photo-album .small img {
+        width: 75px;
+        height: 75px;
+    }
+    .photo-album .medium {
+        width: 200px;
+        padding: 13px 13px 26px 13px;
+        font-size: 0.8em;
+    }
+    .photo-album .medium img {
+        width: 200px;
+        height: 200px;
+    }
+    .photo-album .large {
+        width: 300px;
+        padding: 20px 20px 30px 20px;
+        font-size: 1em;
+    }
+    .photo-album .large img {
+        width: 300px;
+        height: 300px;
+    }
+    .photo-album .img1 {
+        bottom: 10px;
+        right: 365px;
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    .photo-album .img2 {
+        top: 50px;
+        right: 20px;
+        -webkit-transform: rotate(-4deg);
+        -moz-transform: rotate(-4deg);
+        transform: rotate(-4deg);
+    }
+    .photo-album .img3 {
+        left: 400px;
+        top: 0;
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+    .photo-album .img4 {
+        top: 10px;
+        left: 495px;
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+    .photo-album .img5 {
+        bottom: 0;
+        right: 0;
+        -webkit-transform: rotate(1deg);
+        -moz-transform: rotate(1deg);
+        transform: rotate(1deg);
+    }
+    .photo-album .img6 {
+        bottom: 10px;
+        right: 156px;
+        -webkit-transform: rotate(6deg);
+        -moz-transform: rotate(6deg);
+        transform: rotate(6deg);
+    }
+    .photo-album .img7 {
+        bottom:0;
+        left:400px;
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    .photo-album .img8 {
+        bottom: -20px;
+        left: 700px;
+        -webkit-transform: rotate(-8deg);
+        -moz-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+    }
+    .photo-album .img9 {
+        bottom: 0;
+        left: 0;
+        -webkit-transform: rotate(-8deg);
+        -moz-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+    }
+    .photo-album .img10 {
+        top: 0;
+        left: 20px;
+        -webkit-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        transform: rotate(8deg);
+    }
+
+    a:hover,
+    a:focus {
+        z-index: 5;
+    }
+
+    &lt;/style&gt;
+
+    &lt;div class="photo-album"&gt;
+
+        &lt;h1&gt;&lt;span&gt;Contacts of {!account.name}&lt;/span&gt;&lt;/h1&gt;
+
+        &lt;apex:variable var="count" value="{!1}"/&gt;
+        &lt;apex:repeat value="{!allContacts}" var="c"&gt;
+
+        &lt;apex:outputLink value="/{!c.id}" styleClass="medium polaroid img{!Round(count,0)}"
+         target="_blank"&gt;&lt;img src="{!c.Image_URL__C}" alt="{!c.Name}" /&gt;{!c.Name}&lt;/apex:outputLink&gt;
+
+        &lt;apex:variable var="count" value="{!count + 1}"/&gt;
+        &lt;/apex:repeat&gt;
+
+    &lt;/div&gt;
+
+&lt;/apex:page&gt;</pre>
+<p>Ok, all the hard stuff is done. All that is left is to add a custom button to our Account Details, and point it to the Visualforce page:</p>
+<p><a class="overlay" href="http://blogs.developerforce.com/developer-relations/files/2011/12/custom-button-1.png"><img class="aligncenter size-medium wp-image-7125" src="http://blogs.developerforce.com/developer-relations/files/2011/12/custom-button-1-300x186.png" alt="" width="300" height="186" /></a><br />
+That&#8217;s it. Load this into your Salesforce org, and you are good to go!</p>
+<img src="http://feeds.feedburner.com/~r/SforceBlog/~4/7dfqYgBi94g" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blogs.developerforce.com/developer-relations/2011/12/visual-contacts-with-visualforce-and-css3.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://blogs.developerforce.com/developer-relations/2011/12/visual-contacts-with-visualforce-and-css3.html</feedburner:origLink></item>
+		<item>
+		<title>What’s Missing Here?</title>
+		<link>http://feedproxy.google.com/~r/SforceBlog/~3/XrtSpxvgwBo/what-missing-here.html</link>
+		<comments>http://blogs.developerforce.com/developer-relations/2011/12/what-missing-here.html#comments</comments>
+		<pubDate>Fri, 16 Dec 2011 21:40:03 +0000</pubDate>
+		<dc:creator>Steve Bobrowski</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[developer]]></category>
+
+		<guid isPermaLink="false">http://26.7089</guid>
+		<description><![CDATA[<a href="http://blogs.developerforce.com/developer-relations/2011/12/what-missing-here.html"><img align="left" hspace="5" width="150" src="http://blogs.developerforce.com/developer-relations/files/2011/12/todo.png" class="alignleft wp-post-image tfe" alt="List" title="List" /></a>In January, we're thinking of running some cool community contests to help generate some great new developer-oriented content for Developer Force. Wouldn't it be nice to satisfy your most pressing needs? Make Out Your List With all this in mind]]></description>
+			<content:encoded><![CDATA[In January, we're thinking of running some cool community contests to help generate some great new developer-oriented content for Developer Force. Wouldn't it be nice to satisfy your most pressing needs?
+
+Make Out Your List
+
+With all this in mind<img src="http://feeds.feedburner.com/~r/SforceBlog/~4/XrtSpxvgwBo" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blogs.developerforce.com/developer-relations/2011/12/what-missing-here.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://blogs.developerforce.com/developer-relations/2011/12/what-missing-here.html</feedburner:origLink></item>
+		<item>
+		<title>Tweets of the Week</title>
+		<link>http://feedproxy.google.com/~r/SforceBlog/~3/hMEbva32mKY/tweets-of-the-week-3.html</link>
+		<comments>http://blogs.developerforce.com/developer-relations/2011/12/tweets-of-the-week-3.html#comments</comments>
+		<pubDate>Fri, 16 Dec 2011 19:47:39 +0000</pubDate>
+		<dc:creator>Katie Penn</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://26.7075</guid>
+		<description><![CDATA[<a href="http://blogs.developerforce.com/developer-relations/2011/12/tweets-of-the-week-3.html"><img align="left" hspace="5" width="150" src="http://blogs.developerforce.com/developer-relations/files/2011/12/twitter-bird-santa-350-300x300.jpg" class="alignleft wp-post-image tfe" alt="" title="" /></a>Here our some of our favorite tweets of the past week from the world of Force.com. Follow @forcedotcom to keep up with these characters! @MyForceDotCom loading lots of records in @salesforce using Apex data loader and command line interfac]]></description>
+			<content:encoded><![CDATA[Here our some of our favorite tweets of the past week from the world of Force.com. Follow @forcedotcom to keep up with these characters!
+
+
+
+
+ @MyForceDotCom  loading lots of records in @salesforce using Apex data loader and command line interfac<img src="http://feeds.feedburner.com/~r/SforceBlog/~4/hMEbva32mKY" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blogs.developerforce.com/developer-relations/2011/12/tweets-of-the-week-3.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://blogs.developerforce.com/developer-relations/2011/12/tweets-of-the-week-3.html</feedburner:origLink></item>
+		<item>
+		<title>StratoSource: A Force.com Backup and Change Tracking Tool</title>
+		<link>http://feedproxy.google.com/~r/SforceBlog/~3/OOxWCzymvq0/stratosource-a-force-com-back-up-and-change-tracking-tool.html</link>
+		<comments>http://blogs.developerforce.com/developer-relations/2011/12/stratosource-a-force-com-back-up-and-change-tracking-tool.html#comments</comments>
+		<pubDate>Wed, 14 Dec 2011 21:03:47 +0000</pubDate>
+		<dc:creator>Steve Bobrowski</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[force.com]]></category>
+		<category><![CDATA[Tools]]></category>
+
+		<guid isPermaLink="false">http://26.7072</guid>
+		<description><![CDATA[I just updated our Code Share library with a new project: StratoSource. This tool can help you back up and track changes in your Force.com projects. It: understands Force.com XML files accurately tracks changes to objects, fields, classes, trig]]></description>
+			<content:encoded><![CDATA[I just updated our Code Share library with a new project: StratoSource. This tool can help you back up and track changes in your Force.com projects. It:
+
+	understands Force.com XML files
+	accurately tracks changes to objects, fields, classes, trig<img src="http://feeds.feedburner.com/~r/SforceBlog/~4/OOxWCzymvq0" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blogs.developerforce.com/developer-relations/2011/12/stratosource-a-force-com-back-up-and-change-tracking-tool.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://blogs.developerforce.com/developer-relations/2011/12/stratosource-a-force-com-back-up-and-change-tracking-tool.html</feedburner:origLink></item>
+		<item>
+		<title>Push Notification for Android using Urban Airship</title>
+		<link>http://feedproxy.google.com/~r/SforceBlog/~3/Y1u1DJ6n8Zg/push-notification-for-android-using-urban-airship.html</link>
+		<comments>http://blogs.developerforce.com/developer-relations/2011/12/push-notification-for-android-using-urban-airship.html#comments</comments>
+		<pubDate>Wed, 14 Dec 2011 17:38:59 +0000</pubDate>
+		<dc:creator>Sandeep Bhanot</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://26.7022</guid>
+		<description><![CDATA[<a href="http://blogs.developerforce.com/developer-relations/2011/12/push-notification-for-android-using-urban-airship.html"><img align="left" hspace="5" width="150" src="http://blogs.developerforce.com/developer-relations/files/2011/12/Picture2-300x160.png" class="alignleft wp-post-image tfe" alt="" title="" /></a>One of the more common requirements encountered when developing Enterprise mobile applications is the need for Push Notifications - i.e. the ability to 'push' updates to a mobile device based on some action/event on the server side. Both iOS and Andr]]></description>
+			<content:encoded><![CDATA[One of the more common requirements encountered when developing Enterprise mobile applications is the need for Push Notifications - i.e. the ability to 'push' updates to a mobile device based on some action/event on the server side. Both iOS and Andr<img src="http://feeds.feedburner.com/~r/SforceBlog/~4/Y1u1DJ6n8Zg" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blogs.developerforce.com/developer-relations/2011/12/push-notification-for-android-using-urban-airship.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://blogs.developerforce.com/developer-relations/2011/12/push-notification-for-android-using-urban-airship.html</feedburner:origLink></item>
+		<item>
+		<title>Data Loader Source Now on GitHub</title>
+		<link>http://feedproxy.google.com/~r/SforceBlog/~3/K9tKSlgDap0/data-loader-source-now-on-github.html</link>
+		<comments>http://blogs.developerforce.com/tech-pubs/2011/12/data-loader-source-now-on-github.html#comments</comments>
+		<pubDate>Wed, 14 Dec 2011 17:32:02 +0000</pubDate>
+		<dc:creator>Dianne Siebold</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://28.4319</guid>
+		<description><![CDATA[<a href="http://blogs.developerforce.com/tech-pubs/2011/12/data-loader-source-now-on-github.html"><img align="left" hspace="5" width="150" src="http://blogs.developerforce.com/tech-pubs/files/2011/12/Data-Loader-Github.jpg" class="alignleft wp-post-image tfe" alt="" title="" /></a>As you may or may not know, the source code for Data Loader has always been available on SourceForge. Starting with version 22.0, the Data Loader source is now housed on GitHub. GitHub provides a collaborative environment where you can follow code]]></description>
+			<content:encoded><![CDATA[As you may or may not know, the source code for Data Loader has always been available on SourceForge. Starting with version 22.0, the Data Loader source is now housed on GitHub.
+
+GitHub provides a collaborative environment where you can follow code<img src="http://feeds.feedburner.com/~r/SforceBlog/~4/K9tKSlgDap0" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blogs.developerforce.com/tech-pubs/2011/12/data-loader-source-now-on-github.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://blogs.developerforce.com/tech-pubs/2011/12/data-loader-source-now-on-github.html</feedburner:origLink></item>
+		<item>
+		<title>Visualforce + HTML5 + Mobile</title>
+		<link>http://feedproxy.google.com/~r/SforceBlog/~3/0Jzvjsv8u14/visualforce-html5-mobile.html</link>
+		<comments>http://blogs.developerforce.com/developer-relations/2011/12/visualforce-html5-mobile.html#comments</comments>
+		<pubDate>Thu, 08 Dec 2011 23:27:32 +0000</pubDate>
+		<dc:creator>Sandeep Bhanot</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://26.6969</guid>
+		<description><![CDATA[<a href="http://blogs.developerforce.com/developer-relations/2011/12/visualforce-html5-mobile.html"><img align="left" hspace="5" width="150" src="http://blogs.developerforce.com/developer-relations/files/2011/12/HTML5-261x300.png" class="alignleft wp-post-image tfe" alt="" title="" /></a>HTML5 is one of those buzzwords/technologies that seems to be all over the (virtual) airwaves these days. As is inevitable with such hype, there are many instances where HTML5 has become an overloaded/misused term (for e.g. many developers mistakenly]]></description>
+			<content:encoded><![CDATA[HTML5 is one of those buzzwords/technologies that seems to be all over the (virtual) airwaves these days. As is inevitable with such hype, there are many instances where HTML5 has become an overloaded/misused term (for e.g. many developers mistakenly<img src="http://feeds.feedburner.com/~r/SforceBlog/~4/0Jzvjsv8u14" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blogs.developerforce.com/developer-relations/2011/12/visualforce-html5-mobile.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://blogs.developerforce.com/developer-relations/2011/12/visualforce-html5-mobile.html</feedburner:origLink></item>
+		<item>
+		<title>Building scalable social apps at LeWeb’11.</title>
+		<link>http://feedproxy.google.com/~r/SforceBlog/~3/FUTHCIZzDEU/building-scalable-social-apps.html</link>
+		<comments>http://blogs.developerforce.com/developer-relations/2011/12/building-scalable-social-apps.html#comments</comments>
+		<pubDate>Thu, 08 Dec 2011 14:02:58 +0000</pubDate>
+		<dc:creator>Quinton Wall</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://26.6957</guid>
+		<description><![CDATA[<a href="http://blogs.developerforce.com/developer-relations/2011/12/building-scalable-social-apps.html"><img align="left" hspace="5" width="150" src="http://blogs.developerforce.com/developer-relations/files/2011/12/leweb-300x200.jpg" class="alignleft wp-post-image tfe" alt="" title="" /></a>I'm at the LeWeb conference in Paris about to present with Simon Cross of Facebook on Building social apps with Heroku. If you haven't worked it out by now, social apps are all about scale - massive scale!]]></description>
+			<content:encoded><![CDATA[<p><a class="overlay" href="http://blogs.developerforce.com/developer-relations/files/2011/12/leweb.jpeg"><img class="alignright size-medium wp-image-6961" src="http://blogs.developerforce.com/developer-relations/files/2011/12/leweb-300x200.jpg" alt="" width="300" height="200" /></a>I&#8217;m over at the <a href="http://leweb.net/">LeWeb</a> conference in <a href="http://directions.to/leweb" target="_blank">Paris</a> this week where I am presenting with <a href="http://twitter.com/sicross" target="_blank">Simon Cross</a> from Facebook about Heroku for Facebook apps. It is day 2 of the conference, and with my presentation and demo all ready to go, I have been soaking in some of the atmosphere. It is only in Paris you would see a tech conference sponsored by a Coffee company with a keynote from <a href="http://twitter.com/#!/Karl_Lagerfeld" target="_blank">Karl Lagerfield</a>.</p>
+<p>LeWeb is an interesting event. It is a great mix of start-ups, entrepreneurs, and established brands. From all of my discussions with attendees, one theme is obvious &#8211; <strong>it&#8217;s all about social</strong>. Yes, we have heard that before, but what I am finding at this event social has another meaning.</p>
+<p>To put it more clearly, <strong>social is about the consumer being in the forefront</strong> &#8211; how do I as a consumer find the best places to eat, buy the product that not only suits my individual need but is of the best quality, stay in touch with what is important to me etc. Too often we think of social, and social marketing/networking as about staying in touch with the consumer, or engaging in a conversation after the fact.</p>
+<p>If you are not <strong>in</strong> the conversation, you <strong>are</strong> the conversation.</p>
+<p><a class="overlay" href="http://blogs.developerforce.com/developer-relations/files/2011/12/livesketch.jpeg"><img class="aligncenter size-medium wp-image-6962" src="http://blogs.developerforce.com/developer-relations/files/2011/12/livesketch-300x144.jpg" alt="" width="300" height="144" /></a></p>
+<p>This afternoon, during my session, I&#8217;m going to talk a lot about how this consumer-first notion of social is critical to building apps. Yes, we all know by now it is important to leverage the Facebook Open Graph, Twitter APIs, Path, etc. to be in the conversation, and have your brand present, but from a technology perspective social also means scale.</p>
+<p>Never before have we been in a position where I can build an app, make it available on the web, and instantly tap into a potential user base of 800 million people (the latest public number of users on Facebook). To design, and build an app that scales so quickly is difficult, and if you believe in <a href="http://academicearth.org/lectures/core-and-context" target="_blank">Geoffrey Moore&#8217;s Core vs. Context</a> discussions, do you really want to? Is building a scalable infrastructure really your core business? Probably not.</p>
+<p>For those of you who can&#8217;t make it to my session, here is a quick video of how quickly you can build and deploy a scalable social app using Heroku and Facebook.<br />
+<div style="text-align:right;"><a style="color:#aaa;font-size:9px" href="http://www.clickonf5.org/" title="IFRAME Embed for Youtube Free WordPress Plugin" target="_blank">IFRAME Embed for Youtube</a></div></p>
+<img src="http://feeds.feedburner.com/~r/SforceBlog/~4/FUTHCIZzDEU" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blogs.developerforce.com/developer-relations/2011/12/building-scalable-social-apps.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://blogs.developerforce.com/developer-relations/2011/12/building-scalable-social-apps.html</feedburner:origLink></item>
+	</channel>
+</rss>

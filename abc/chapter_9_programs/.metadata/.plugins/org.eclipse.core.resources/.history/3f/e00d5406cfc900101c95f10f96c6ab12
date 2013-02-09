@@ -1,0 +1,18 @@
+/* The mystery program. */
+
+#if (VAX || PC)
+#define		HEX0	0x6c6c6548
+#define		HEX1	0x77202c6f
+#define		HEX2	0x646c726f
+#define		HEX3	0x00000a21
+#else
+#define		HEX0	0x48656c6c
+#define		HEX1	0x6fc2077
+#define		HEX2	0x6f726c64
+#define		HEX3	0x210a0000
+#endif
+
+typedef union {
+	char what[16];
+	long cipher[4];
+};

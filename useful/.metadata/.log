@@ -1,0 +1,59 @@
+!SESSION 2011-09-02 16:52:31.257 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -data /home/robin/work/programming/c/useful -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.event 2 0 2011-09-02 16:52:31.953
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.0.v20100503 [368]
+]
+Component2: Component[
+	name = org.eclipse.equinox.event
+	activate = activate
+	deactivate = deactivate
+	modified = 
+	configuration-policy = optional
+	factory = null
+	autoenable = true
+	immediate = false
+	implementation = org.eclipse.equinox.internal.event.EventComponent
+	state = Unsatisfied
+	properties = 
+	serviceFactory = false
+	serviceInterface = [org.osgi.service.event.EventAdmin]
+	references = null
+	located in bundle = org.eclipse.equinox.event_1.2.100.v20110502 [116]
+]  
+
+!ENTRY org.eclipse.ui 4 4 2011-09-02 16:52:35.305
+!MESSAGE Referenced part does not exist yet: org.eclipse.jdt.ui.PackageExplorer.
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-09-02 16:52:46.514
+!MESSAGE Indexed 'boolean' (0 sources, 34 headers) in 1.11 sec: 657 declarations; 788 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.osgi 2 1 2011-09-02 16:54:56.326
+!MESSAGE NLS unused message: CodeAssistPreferencePage_showStub in: org.eclipse.php.internal.ui.PHPUIMessages
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-09-02 17:13:36.865
+!MESSAGE Indexed 'c_standard' (0 sources, 34 headers) in 0.16 sec: 657 declarations; 788 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-09-02 17:19:05.336
+!MESSAGE Indexed 'test_macros' (1 sources, 40 headers) in 0.24 sec: 1,070 declarations; 1,258 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)

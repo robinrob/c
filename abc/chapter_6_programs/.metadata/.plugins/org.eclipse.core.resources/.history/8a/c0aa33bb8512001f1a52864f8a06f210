@@ -1,0 +1,44 @@
+/*
+ * mergeSort.c
+ *
+ *  Created on: Feb 5, 2010
+ *      Author: user
+ */
+
+#include "mergeSort.h"
+
+int main(void)
+{
+	int *a, *b, *c, n, m;
+
+	printf("Enter size for array a: ");
+	scanf("%d", &n);
+	printf("Enter size for array b: ");
+	scanf("%d", &m);
+
+	a = calloc(n, sizeof(int));
+	b = calloc(m, sizeof(int));
+	c = calloc(n + m, sizeof(int));
+
+	srand(time(NULL));
+	fill_array(a, n);
+	fill_array(b, m);
+	printf("\nArray a (unsorted):\n");
+	wrt_array(a, n);
+	printf("\nArray b (unsorted):\n");
+	wrt_array(b, m);
+	printf("\nSorting array a:\n");
+	bubble_sort(a, n);
+	printf("\nSorting array b:\n");
+	bubble_sort(b, m);
+	printf("\nCombining arrays a and b:\n");
+	merge(a, n, b, m, c);
+	printf("\nMerged ordered array:\n");
+	wrt_array(c, n + m);
+
+	free(a);
+	free(b);
+	free(c);
+
+	return 0;
+}

@@ -1,0 +1,15 @@
+
+**** Build of configuration Debug for project breaksize ****
+
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:35:34: error: expected ‘)’ before ‘;’ token
+../main.c:40:2: error: expected ‘;’ before ‘}’ token
+../main.c:26:23: warning: unused variable ‘avg_break’
+../main.c:25:29: warning: unused variable ‘brk’
+make: *** [main.o] Error 1
+
+**** Build Finished ****

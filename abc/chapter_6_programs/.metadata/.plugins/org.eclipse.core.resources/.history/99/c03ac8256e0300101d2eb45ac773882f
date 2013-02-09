@@ -1,0 +1,18 @@
+/* Testing use of type ptrdiff_t defined in stddef.h (which is defined in there to
+ * be of type long int).
+ * prt_diff.c
+ *
+ *  Created on: Dec 9, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+#include <stddef.h>
+
+int main(void)
+{
+	int a, b, *p = &a, *q = &b;
+	ptrdiff_t diff = p - q;
+	printf("diff = %ld\n", diff);
+	return 0;
+}

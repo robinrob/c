@@ -1,0 +1,14 @@
+
+**** Build of configuration Debug for project sumPiSquared ****
+
+make all 
+Building file: ../sumPiSquared.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"sumPiSquared.d" -MT"sumPiSquared.d" -o"sumPiSquared.o" "../sumPiSquared.c"
+Finished building: ../sumPiSquared.c
+ 
+Building target: sumPiSquared
+Invoking: GCC C Linker
+gcc  -o"sumPiSquared"  ./sumPiSquared.o   
+Finished building target: sumPiSquared
+ 

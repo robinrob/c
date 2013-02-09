@@ -1,0 +1,33 @@
+#include "sort.h"
+
+void swap_string(char **p, char **q)
+{
+  char *c = *p;
+  *p = *q;
+  *q = c;
+}
+
+void print_list(char **left, char **right)
+{
+  while (left <= right) {
+    printf("%s\n", *(left++));
+  }
+  printf("\n");
+}
+
+int string_val(char *s)
+{
+  int i = 0, val = 0;
+  while (*(s + i) != '\0') {
+    val += tolower(*(s + i)) -'a';
+    ++i;
+  }
+  return val;
+}
+
+void print_sublist(char **left, char **right)
+{
+  while (left <= right) {
+    printf("%s ", *(left++));
+  }
+}

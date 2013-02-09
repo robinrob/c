@@ -1,0 +1,11 @@
+
+**** Build of configuration Debug for project test_cmp_hand ****
+
+make all 
+Building target: test_cmp_hand
+Invoking: Cross GCC Linker
+gcc  -o "test_cmp_hand"  ./check.o ./cmp.o ./main.o ./play.o ./print.o ./setup.o   
+Finished building target: test_cmp_hand
+ 
+
+**** Build Finished ****

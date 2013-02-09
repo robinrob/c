@@ -1,0 +1,43 @@
+/* Merges two ordered arrays into a third ordered array
+ * mergeSort.c
+ *
+ *  Created on: Feb 5, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(void)
+{
+	int *a, *b, n, m;
+
+	printf("Enter size for array a: ");
+	scanf("%d", &n);
+	printf("Enter size for array b: ");
+	scanf("%d", &m);
+
+	a = calloc(n, sizeof(int));
+	b = calloc(m, sizeof(int));
+
+
+}
+
+
+void fill_array(int *a, int n)
+{
+	int i;
+
+	for (i = 0; i < n; ++i)
+		a[i] = rand() % 19 - 9;
+}
+
+void wrt_array(int *a, int n)
+{
+	int i;
+
+	printf("a = [");
+	for (i = 0; i < n; ++i)
+		printf("%d%s", a[i], ((i < n - 1) ? ", " : "]\n"));
+}

@@ -1,0 +1,73 @@
+#include "sort.h"
+
+void swap_string(char **p, char **q)
+{
+  char *c = *p;
+  *p = *q;
+  *q = c;
+}
+
+void print_list(char **left, char **right)
+{
+  while (left <= right) {
+    printf("%s\n", *(left++));
+  }
+  printf("\n");
+}
+
+void print_listvals(char **left, char **right)
+{
+  while (left <= right) {
+    printf("%s: %d\n", *(left), str_val(*left));
+    left++;
+  }
+  printf("\n");
+}
+
+int str_val(char *s)
+{
+  int i = 0, val = 0;
+  while (*(s + i) != '\0') {
+    val += tolower(*(s + i)) -'a';
+    ++i;
+  }
+  return val;
+}
+
+int str_comp(char *a, char *b)
+{
+  while (*b != '\0') {
+    if (*a == '\0') {
+      return 1;
+    }
+    if (*b > *a) {
+      return 1;
+    }
+    else if (*b < *a) {
+      return -1;
+    }
+    ++a;
+    ++b;
+  }
+  if ((*b == '\0') && (*a == '\0')) {
+    return 0;
+  }
+  else {
+    return -1;
+  }
+}
+
+str_o2(char *a, char *b)
+{
+  if (strcmp(a, b)) {
+    swap_string(&a, &b);
+  }
+}
+
+str_o3(char *a, char *b, char *c)
+{
+  str_o2(str_o2(a, b), str_o2(b, c));
+}
+
+}
+

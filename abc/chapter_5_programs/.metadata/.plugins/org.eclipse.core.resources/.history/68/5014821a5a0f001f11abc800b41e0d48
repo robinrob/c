@@ -1,0 +1,92 @@
+/*
+ * playText.c
+ *
+ *  Created on: Feb 1, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+
+#define LIMIT 5
+#define FRAMES 50
+
+void printA(void);
+void printB(void);
+void printC(void);
+
+int main(void)
+{
+	/*char c;
+
+	while(scanf("%c", &c)) {
+		if (c == 'a')
+			printA();
+		else if (c == 'b')
+			printB();
+		else if (c == 'c')
+			printC();
+	}*/
+	int i, j;
+	for (i = 0; i < LIMIT; ++i)
+		for (j = 0; j < FRAMES; ++j)
+			printA();
+		for (j = 0; j < FRAMES; ++j)
+			printB();
+		for (j = 0; j < FRAMES; ++j)
+			printC();
+
+	return 0;
+}
+
+void printA(void)
+{
+	printf(
+			"           ________              \n"
+			"          /        \\            \n"
+			"         /    /\\    \\          \n"
+			"        /    /  \\    \\         \n"
+			"       /    /    \\    \\        \n"
+			"      /    /______\\    \\       \n"
+			"     /    /        \\    \\      \n"
+			"    /    /__________\\    \\     \n"
+			"   /    /            \\    \\    \n"
+			"  /    /              \\    \\   \n"
+			" /    /                \\    \\  \n"
+			"/____/                  \\____\\ \n"
+			);
+}
+
+void printB(void)
+{
+	printf(
+			"_____             \n"
+			"|    |            \n"
+			"|    |            \n"
+			"|    |            \n"
+			"|    |            \n"
+			"|    |____________\n"
+			"|                |\n"
+			"|     ______     |\n"
+			"|    |      |    |\n"
+			"|    |______|    |\n"
+			"|                |\n"
+			"|________________|\n");
+}
+
+void printC(void)
+{
+	printf(
+			" ________________ \n"
+			"|                | \n"
+			"|     ___________|\n"
+			"|    |           \n"
+			"|    |           \n"
+			"|    |           \n"
+			"|    |           \n"
+			"|    |           \n"
+			"|    |           \n"
+			"|    |___________\n"
+			"|                |\n"
+			"|________________|\n"
+			);
+}

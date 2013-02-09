@@ -1,0 +1,49 @@
+/* Rewriting some 'spaghetti code' to eliminate goto statements
+ * betterCode2.c
+ *
+ *  Created on: Jan 20, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+#include "/home/user/c/sqrt2.c"
+
+int main(void)
+{
+	double a, b, c, d, r1, r2;
+
+	d = b * b - 4.0 * a * c;
+	if (d == 0.0)
+		goto L1;
+	else if (d > 0.0) {
+		if (a != 0.0) {
+			r1 = (- b + sqrt(d)) / (2.0 * a);
+			r2 = (- b - sqrt(d)) / (2.0 * a);
+			goto L4;
+		}
+		else
+			goto L3;
+	}
+	else
+		goto L2;
+
+	L1:
+	if (a != 0.0)
+		r1 = r2 = -b / (2.0 * a);
+	else
+		goto L3;
+	goto L4;
+	L2:
+	if (a != 0.0) {
+		printf("imaginary roots\n");
+		goto L4;
+	}
+	L3: printf("degenerate case\n");
+	L4: printf("This is fucked!\n");
+
+	return 0;
+}
+
+
+	}
+}

@@ -1,0 +1,16 @@
+
+**** Build of configuration Debug for project dbl_with_caps ****
+
+make all 
+Building file: ../dbl_with_caps.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"dbl_with_caps.d" -MT"dbl_with_caps.d" -o "dbl_with_caps.o" "../dbl_with_caps.c"
+Finished building: ../dbl_with_caps.c
+ 
+Building target: dbl_with_caps
+Invoking: Cross GCC Linker
+gcc  -o "dbl_with_caps"  ./dbl_with_caps.o   
+Finished building target: dbl_with_caps
+ 
+
+**** Build Finished ****

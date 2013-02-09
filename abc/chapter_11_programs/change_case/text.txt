@@ -1,0 +1,2 @@
+Hello this text's case will be
+changed by change_case.c

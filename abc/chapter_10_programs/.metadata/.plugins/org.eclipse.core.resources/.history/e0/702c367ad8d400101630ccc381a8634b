@@ -1,0 +1,4 @@
+/* Counting functions for Singly-Linked Lists. */
+
+#include "sllist.h"
+

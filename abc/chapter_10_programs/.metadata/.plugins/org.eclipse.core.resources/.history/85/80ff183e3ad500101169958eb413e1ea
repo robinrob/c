@@ -1,0 +1,17 @@
+/* Header file for testing functions. */
+
+/* Tests list printing functions. */
+void print_test(NODE *list);
+
+/* Tests sorting function. */
+void sort_test(NODE *list);
+
+/* Tests cycle-checking and decycling functions. */
+void cycle_test(NODE *list);
+
+/* Tests concatenation functions. */
+void concat_test(NODE *list);
+
+/* Tests insertion/deletion functions. */
+void ins_del_test(NODE *list);
+

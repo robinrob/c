@@ -1,0 +1,16 @@
+
+**** Build of configuration Debug for project testswap ****
+
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: testswap
+Invoking: Cross GCC Linker
+gcc  -o "testswap"  ./check.o ./cnt.o ./concat.o ./create.o ./ins_del.o ./main.o ./misc.o ./print.o ./sort.o   
+Finished building target: testswap
+ 
+
+**** Build Finished ****

@@ -1,0 +1,5 @@
+a/A: 4 b/B: 2 c/C: 8 d/D: 2 e/E: 4 f/F: 4 
+g/G: 0 h/H: 2 i/I: 3 j/J: 0 k/K: 7 l/L: 4 
+m/M: 1 n/N: 5 o/O: 6 p/P: 1 q/Q: 0 r/R: 6 
+s/S: 7 t/T: 8 u/U: 5 v/V: 0 w/W: 2 x/X: 0 
+y/Y: 1 z/Z: 0 

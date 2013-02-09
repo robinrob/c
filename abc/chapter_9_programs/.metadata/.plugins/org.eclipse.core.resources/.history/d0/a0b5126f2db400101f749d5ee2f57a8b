@@ -1,0 +1,41 @@
+/* Header file for the Poker project. */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+
+//suits
+typedef enum {clubs, diamonds, hearts, spades} suit;
+
+//a card
+struct card {
+    int pips;
+    suit suit;
+};
+
+typedef struct card card;
+
+void print_hand(card *c_ptr);
+void print_data(char *string, int n_deals, int cnt, int rank);
+void print_pips_name(int pips);
+char *suit_name(suit s);
+
+card assign_values(int pips, suit suit);
+void shuffle(card deck[52]);
+void swap(card *p, card *q);
+void deal_the_cards(card deck[52], card hand[5]);
+void play_poker(card deck[52], int n_deals);
+
+int is_straight_flush(card h[5]);
+int is_four_kind(card h[5]);
+int is_full_house(card h[5]);
+int is_flush(card h[5]);
+int is_straight(card h[5]);
+int is_three_kind(card h[], int n);
+int is_two_pair(card h[]);
+int is_pair(card h[], int n);
+
+int cmp(const void *vp, const void *vq);
+
+

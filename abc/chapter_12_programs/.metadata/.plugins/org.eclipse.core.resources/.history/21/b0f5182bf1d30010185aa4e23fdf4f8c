@@ -1,0 +1,4 @@
+/* The main() function in this program returns an
+ * integer status value which can be used by a shell
+ * script.
+ */

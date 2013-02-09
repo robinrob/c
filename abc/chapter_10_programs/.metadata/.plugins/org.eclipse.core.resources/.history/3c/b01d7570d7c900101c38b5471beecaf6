@@ -1,0 +1,12 @@
+/* Count a list recursively. */
+
+#include "list.h"
+
+int count_it(LINK head)
+{
+	int cnt = 0;
+
+	for ( ; head != NULL; head = head -> next)
+		++cnt;
+	return cnt;
+}

@@ -1,0 +1,16 @@
+
+**** Build of configuration Debug for project change_case ****
+
+make all 
+Building file: ../change_case.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"change_case.d" -MT"change_case.d" -o "change_case.o" "../change_case.c"
+Finished building: ../change_case.c
+ 
+Building target: change_case
+Invoking: Cross GCC Linker
+gcc  -o "change_case"  ./change_case.o   
+Finished building target: change_case
+ 
+
+**** Build Finished ****

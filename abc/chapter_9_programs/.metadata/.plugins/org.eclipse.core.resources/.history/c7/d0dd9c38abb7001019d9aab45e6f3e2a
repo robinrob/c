@@ -1,0 +1,7 @@
+//A faulty union definition.
+
+union a {
+	int a;
+	char b;
+	float a;
+} a, b, c;

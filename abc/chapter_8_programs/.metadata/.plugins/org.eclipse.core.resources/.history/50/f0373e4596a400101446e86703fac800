@@ -1,0 +1,61 @@
+/* Testing quicksort. */
+
+#include "sort.h"
+
+int main(void)
+{
+	int a[N_ELEM], b[N_ELEM];
+	long int i;
+	
+	srand(time(NULL));
+
+	for (i = 0; i < N_ELEM; ++i) {
+			a[i] = (N_ELEM - i - 1) % RANGE;
+			b[i] = (N_ELEM - i - 1) % RANGE;
+		}
+
+	printf("Array (a) before sort (reverse order):\n");
+	print_arr(a, N_ELEM);
+	printf("Array (b) before sort (reverse order):\n");
+	print_arr(b, N_ELEM);
+	start_time();
+	quicksort(a, a + N_ELEM - 1);
+	quicksort(b, b + N_ELEM - 1);
+	printf("Sorted array (a):\n");
+	print_arr(a, N_ELEM);
+	printf("Sorted array (b):\n");
+	print_arr(b, N_ELEM);
+	putchar('\n');
+	print_time();
+
+	for (i = 0; i < N_ELEM; ++i) {
+			a[i] = i % RANGE;
+		}
+	printf("\nArray before sort (in order):\n");
+	print_arr(a, N_ELEM);
+	start_time();
+	quicksort(a, a + N_ELEM - 1);
+	printf("Sorted array:\n");
+	print_arr(a, N_ELEM);
+	putchar('\n');
+	print_time();
+	return 0;
+}
+
+void print_arr(int a[], long int n)
+{
+	long int i;
+	
+	for (i = 0; i < 5; ++i) {
+		printf("%5d ", a[i]);
+	}
+	printf("  ...\n");
+	for (i = n / 2; i < (n / 2 + 5); ++i) {
+		printf("%5d ", a[i]);
+	}
+	printf("  ...\n");
+	for (i = n - 5; i < n; ++i) {
+		printf("%5d ", a[i]);
+	}
+	printf("\n");
+}

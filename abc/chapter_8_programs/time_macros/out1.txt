@@ -1,0 +1,84 @@
+Clock ticks: 0
+a  eUROPEAN  COIN  OF  xx  CENTS  xxx  
+
+AFUTFxN  eUROPESE  xxSENTMUNT  xxx  
+
+ARUTFx        xx    xxx  
+
+CAUTFxdEU  CNTIMS  DEURO  xxx  
+
+CSczUTFxeURO  MINCE    xx  CENT  xxx
+
+CYUTFxdARN  PRES  eWROP  xx  SENT  xxx  
+
+DAUTFxeN  euro  MNT  P  xx  CENT  xxx  
+
+DEUTFxzEHN  cENT  xxx  
+
+ELUTFx    xx  
+
+ENGBUTFxa  eUROPEAN  COIN  OF  xx  CENTS  xxx  
+
+ESUTFxuNA  MONEDA  DE  xx  CNTIMOS  DE  eURO  xxx  
+
+EUUTFxeURO  BATEN  xx  ZENTIMOKO  TXANPONA  xxx  
+
+FIUTFxxx  SENTIN  KOLIKKO  xxx  
+
+FRUTFxuNE  PICE  DE  MONNAIE  EUROPENNE  DE  xx  CENTIMES  xxx  
+
+GLUTFxuNHA  MOEDA  eUROPEA  DE  xx  CNTIMOS  xxx  
+
+GUUTFx          
+
+HUUTFxtZ  CENT  xxx  
+
+ISUTFxeVRPSK  xx  CENTAMYNT
+
+ITUTFxuNA  MONETA  EUROPEA  DA  xx  CENTESIMI  xxx  
+
+JAUTFx
+
+KAUTFx    xx    xxx  
+
+KOUTFx  xx  
+
+LTUTFxeUROPIETIKA  xx  CENT  MONETA
+
+MSUTFxxx  SEN  eROPAH  xxx  
+
+NBUTFxeN  EUROPEISK  xxCENTMYNT  xxx  
+
+NLUTFxeEN  EUROMUNT  VAN  xx  CENT    xxx
+
+NNUTFxeIN  EUROPEISK  xxCENTMYNT  xxx
+
+PLUTFxeUROPEJSKA  MONETA  O  WARTOCI  xx  CENTW  xxx  
+
+PTBRUTFxuMA  MOEDA  EUROPIA  DE  xx  CENTAVOS  DE  eURO  xxx  
+
+PTPTUTFxuMA  MOEDA  EUROPEIA  DE  xx  CNTIMOS  xxx  
+
+RUUTFx    
+
+SKUTFxeURPSKA  xxCENTOV  MINCA  xxx  
+
+SLUTFxxx  EVROPSKIH  CENTOV  VALUTE  eVRO
+
+SVUTFxeTT  xxEUROCENTMYNT  xxx  
+
+SWUTFxsARAFU  YA  EURO  YA  SENTI  KUMI
+
+THUTFx  xx    xxx  
+
+TRUTFxxx  SENT  DEERINDE  aVRUPA  MADENI  PARAS  xxx  
+
+UKUTFx    xx    xxx  
+
+ZHCNUTFx
+
+ZHHKUTFx
+
+ZHTWUTFx
+
+Clock ticks: -0.215457

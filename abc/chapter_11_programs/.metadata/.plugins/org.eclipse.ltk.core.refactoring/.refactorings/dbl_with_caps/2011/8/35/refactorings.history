@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;dbl_with_caps/dbl_caps.c&apos; to &apos;dbl_with_caps.c&apos;" description="Rename resource &apos;dbl_caps.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="dbl_caps.c" name="dbl_with_caps.c" stamp="1314718465129" updateReferences="true"/>
+</session>

@@ -1,0 +1,45 @@
+/* Miscellaneous functions for Doubly-Linked Lists. */
+
+#include "dllist.h"
+
+/* Returns a pointer to the NODE at the given list
+ * position in the given list. */
+NODE* get_node(NODE* list, int pos)
+{
+	int i = 0;
+	assert(pos >= 0);
+
+	while (i < pos) {
+		if (list == NULL) {
+			return list;
+		}
+		list = list -> next;
+		++i;
+	}
+	return list;
+}
+
+/* Deletes duplicate-valued elements in the list. */
+void del_dupl(NODE **list)
+{
+	int i;
+	NODE *p, *q;
+	p = q = *list;
+
+	i = 0;
+	while (q -> next != NULL) {
+		while (p != NULL) {
+			if (p == q) {
+				continue;
+			}
+			if (check_equal_data(p -> data, q -> data)) {
+				delete(list, i);
+			}
+			p = p -> next;
+			++i;
+		}
+		p = *list;
+		q = q -> next;
+		i = 0;
+	}
+}

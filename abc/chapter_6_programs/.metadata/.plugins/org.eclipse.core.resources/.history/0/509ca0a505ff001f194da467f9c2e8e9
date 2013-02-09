@@ -1,0 +1,18 @@
+/* Messing about with pointers
+ * pointers.c
+ *
+ *  Created on: Feb 4, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+
+int main(void)
+{
+	int i = 7, *p = &(15);
+
+	printf("Value of i: %d\n"
+			"Value of &i or p: %p\n", *p, p);
+
+	return 0;
+}

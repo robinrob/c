@@ -1,0 +1,47 @@
+/* Function testing functions. */
+
+#include "dllist.h"
+
+/* Tests list printing functions. */
+void print_test(NODE *list)
+{
+	printf("The list:\n");
+	print_list(list);
+
+	printf("In reverse:\n");
+	print_list_reverse(list);
+}
+
+/* Tests insertion/deletion functions. */
+void ins_del_test(NODE *list)
+{
+	/* Insert an item into the list & print the list. */
+	DATA newd;
+	newd.name = "INSERTION";
+	newd.age = 1;
+	newd.weight = 0;
+	insert(newd, &list, 0);
+	insert(newd, &list, 4);
+	insert(newd, &list, 7);
+	printf("With new insertion:\n");
+	print_list(list);
+
+	/* Delete the item from the list & print the list. */
+	delete(&list, 0);
+	delete(&list, 3);
+	delete(&list, 5);
+	printf("With a deletion:\n");
+	print_list(list);
+}
+
+/* Tests del_dupl() function. */
+void del_dupl_test(NODE *list)
+{
+	printf("Test del_dupl():\n");
+	DATA d = list -> data;
+	insert(d, &list, 4);
+	print_list(list);
+	del_dupl(&list);
+	printf("Test del_dupl():\n");
+	print_list(list);
+}

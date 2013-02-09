@@ -1,0 +1,22 @@
+/* Creating a linked list from an array. */
+
+#include "sllist.h"
+
+int main(void)
+{
+	DATA *d;
+	NODE *list;
+
+	d = create_array5();
+	list = create_list(d, 5);
+
+	free(list);
+
+	return 0;
+}
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+/* Calculates e to an arbitrary precision using two algorithms
+ * calculateE.c
+ *
+ *  Created on: Jan 20, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+
+#define E 2.7182818284
+#define TOL 0.1
+
+int main(void)
+{
+	double x0, x1;
+	int n, i;
+
+	n = 1;
+	x1 = (1 + 1.0 / n);
+	while (((E - x1) > TOL) || ((x1 - E) > TOL)) {
+		++n;
+		x1 = (1 + 1.0 / n);
+		for (i = 1; i < n; ++i)
+			x1 *= (1 + 1.0 / n);
+		printf("%lf\n", x1);
+	}
+	printf("e using method 1: %lf\n", x1);
+	x1 = 1;
+	i = 0;
+	while (((E - x1) > TOL) || ((x1 - E) > TOL))
+		x1 += i / factorial(i);
+	printf("e using method 2: %lf\n", x1);
+
+	return 0;
+}
+
+int factorial(int n)
+{
+	while (n > 1)
+		n = n * (n - 1);
+	return n;
+}
+

@@ -1,0 +1,14 @@
+/* Header file. */
+
+#include <stdio.h>
+#include <assert.h>
+
+typedef double dbl;
+
+extern int cnt;
+extern const dbl eps;
+
+dbl bisection(dbl f(dbl x), dbl a, dbl b);
+dbl f1(dbl x);
+dbl f2(dbl x);
+dbl f3(dbl x);

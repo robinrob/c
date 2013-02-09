@@ -1,0 +1,16 @@
+
+**** Build of configuration Debug for project sumSquare ****
+
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o"main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: sumSquare
+Invoking: GCC C Linker
+gcc  -o"sumSquare"  ./fct.o ./main.o ./sum_sqr.o   
+./main.o: In function `main':
+../main.c:14: undefined reference to `sin'
+collect2: ld returned 1 exit status
+make: *** [sumSquare] Error 1

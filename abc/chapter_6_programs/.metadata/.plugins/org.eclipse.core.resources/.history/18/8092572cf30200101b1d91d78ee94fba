@@ -1,0 +1,11 @@
+/*
+ * find_root.h
+ *
+ *  Created on: Dec 8, 2010
+ *      Author: user
+ */
+
+#include <assert.h>
+#include <stdio.h>
+
+typedef double dbl;

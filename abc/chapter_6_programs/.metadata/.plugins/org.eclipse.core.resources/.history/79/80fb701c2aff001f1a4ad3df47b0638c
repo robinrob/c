@@ -1,0 +1,27 @@
+/* Messing about with pointers
+ * pointers.c
+ *
+ *  Created on: Feb 4, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+
+int main(void)
+{
+	int i = 6, *p, j = 2;
+	p = &i;
+	*p = i;
+
+	printf("Value of i: %d\n"
+			"Value of &i or p: %p\n", *p, p);
+	printf("Value at the address pointed to by p: %d\n", *p);
+
+	*p = j;
+
+	printf("Value of i: %d\n"
+			"Value of &i or p: %p\n", *p, p);
+	printf("Value at the address pointed to by p: %d\n", *p);
+
+	return 0;
+}

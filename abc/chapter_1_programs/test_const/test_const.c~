@@ -1,0 +1,16 @@
+/* Test usage of const identifier
+ * testConst.c
+ *
+ *  Created on: Dec 30, 2009
+ *      Author: user
+ */
+
+int main(void)
+{
+	const int a = 0;
+
+	a = 333;
+	printf("%d", a);
+
+	return 0;
+}

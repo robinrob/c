@@ -1,0 +1,236 @@
+/* Functions for single-linked lists. */
+
+#include "list.h"
+
+/* Creates a DATA list from an array of DATA values
+ * and returns a reference to the head of the list. */
+NODE* create_l(DATA *array, int n)
+{
+	int i;
+	NODE *p, *list;
+	p = malloc(sizeof(NODE));
+	list = p;
+
+	for (i = 0; i < n - 1; ++i) {
+		p -> data = *(array + i);
+		p -> next = malloc(sizeof(NODE));
+		p = p -> next;
+	}
+	p -> data = *(array + n - 1);
+	p -> next = NULL;
+
+	return list;
+}
+
+/* Prints a list of DATA values by following the links. */
+void print_list(NODE *list)
+{
+	while(list != NULL) {
+		printf("list NODE:  %s%10s%s%d%s%d\n",
+						"name: ", list -> data.name,
+						", age: ", list -> data.age,
+						", weight: ", list -> data.weight);
+		list = list -> next;
+	}
+	if (list == NULL) {
+		printf("list NODE:  NULL\n");
+	}
+	else {
+		printf("--MISSING NULL!--\n");
+	}
+	putchar('\n');
+}
+
+/* Prints a list of DATA values using iteration. */
+void print_list_it(NODE *list)
+{
+	int i, n = cnt_list(list);
+
+	printf("n: %d\n", n);
+	for (i = 0; i < n; ++i) {
+		printf("list element:  %s%10s%s%d%s%d\n",
+						"name: ", list -> data.name,
+						", age: ", list -> data.age,
+						", weight: ", list -> data.weight);
+		list = list -> next;
+	}
+	putchar('\n');
+}
+
+//Counts the length of a list.
+int cnt_list(NODE *list)
+{
+	if (list == NULL) {
+		return 0;
+	}
+	else {
+		return cnt_list(list -> next) + 1;
+	}
+}
+
+/* Sorts a list of DATA values using the age field. The list
+ * is copied into an array which is sorted and used to make
+ * a new list. The new list is then returned.
+ */
+//NODE* sort_list_age(NODE *list)
+//{
+//	int i, n;
+//	n = cnt_list(list);
+//	printf("n: %d\n", n);
+//	DATA d[n];
+//
+//	for (i = 0; i < n; ++i) {
+//		d[i] = list -> data;
+//		list = list -> next;
+//	}
+//	qsort(d, 5, sizeof(DATA), cmp_age);
+//
+//	return create_l(d, n);
+//}
+
+/* Bubble-sorts a list of DATA values using the
+ * specified sorting key.
+ */
+void bubb_sort_list(NODE *list, sort_key key, void comp_func(NODE *, sort_key))
+{
+	int i, n = cnt_list(list);
+
+	NODE *p = list;
+	for (i = 0; i < n; ++i) {
+		while (p -> next != NULL) {
+			comp_func(p, key);
+			p = p -> next;
+		}
+	}
+}
+
+/* Compares the data stored in the given node
+ * and the next one using the specified key value.
+ * The data values are swapped if they are out of order.
+ */
+void compare(NODE *n, sort_key key)
+{
+	int diff;
+	switch(key)
+	{
+	case age:
+		diff = n -> data.age - n -> next -> data.age;
+		break;
+	case name:
+		diff = strcmp(n -> data.name, n -> next -> data.name);
+		break;
+	case weight:
+		diff = n -> data.weight - n -> next -> data.weight;
+		break;
+	default:
+		printf("Programmer error!\n");
+		break;
+	}
+	if (diff > 0) {
+		DATA tmp = n -> next -> data;
+		n -> next -> data = n -> data;
+		n -> data = tmp;
+	}
+}
+
+/* Concatenates list2 onto the end of list1. */
+void concat(NODE *list1, NODE *list2)
+{
+	while (list1 -> next != NULL) {
+		list1 = list1 -> next;
+	}
+	list1 -> next = list2;
+}
+
+/* Checks to see whether a list is a cycle. */
+boolean iscycle(NODE *list)
+{
+	int head_ad = (int) list;
+//	printf("head_ad: %d\n", head_ad);
+	while (list -> next != NULL) {
+		list = list -> next;
+//		printf("address of list: %d\n", (int) list);
+		if (((int) list) == head_ad) {
+			return true;
+		}
+	}
+	return false;
+}
+
+/* Turns a cycling list into a straight & finite list. */
+void decycle(NODE *list)
+{
+	int head_ad = (int) list;
+	while (list -> next != NULL) {
+		if ((int) (list -> next) == head_ad) {
+			list -> next = NULL;
+			break;
+		}
+		list = list -> next;
+	}
+}
+
+/* Inserts an element into the given list, at the
+ * given list position (starting from 1). */
+void insert(DATA d, NODE *list, int pos)
+{
+	NODE *p = NULL;
+	assert(pos >= 1);
+	if (pos == 1) {
+		p = malloc(sizeof(NODE));
+		p -> next = list;
+	}
+	else {
+		p = get_node(list, pos - 1);
+		NODE *tmp = p -> next;
+		p -> next = malloc(sizeof(NODE));
+		p -> next -> data = d;
+		p -> next -> next = tmp;
+	}
+}
+
+/* Deletes an element at the given list position
+ * in the given list (starting from 1).
+ */
+void delete(NODE *list, int pos)
+{
+	NODE *p = list;
+	if (pos == 1) {
+		assert(p != NULL);
+		while (p -> next != NULL) {
+			p -> data = p -> next -> data;
+			p -> next = p -> next -> next;
+			p = p -> next;
+			free(list);
+		}
+		p -> next = NULL;
+	}
+	else {
+		p = get_node(list, pos - 1);
+		assert(p != NULL);
+		p -> next = p -> next -> next;
+		free(p -> next);
+	}
+}
+
+/* Returns a pointer to the NODE at the given list
+ * position in the given list. */
+NODE* get_node(NODE* list, int pos)
+{
+	int i = 0;
+	NODE *p = list;
+
+	if (pos == 0) { /* do nothing */ }
+	else {
+		while (i < pos - 1) {
+			if (p -> next == NULL) {
+				break;
+			}
+			p = p -> next;
+			++i;
+		}
+	}
+	return p;
+}
+
+

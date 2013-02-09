@@ -1,0 +1,27 @@
+/* main.c
+ *
+ * This program asks the user for an integer in base 10, then repeatedly
+ * asks for an integer base from 1-36 and displays the number in that base.
+ */
+
+#include "base_change.h"
+
+int main(void)
+{
+	int base = 0;
+	unsigned long num;
+
+	print_message();
+
+	while (get_int("Enter base to convert to", 1, MAX_BASE);) {
+		while ((base = get_base()) != NULL_INT) {
+			printf("%10ld%s%2d   : ", num, " displayed in base ", base);
+			calculate_display(base, num);
+		}
+	}
+	printf("\nBye!\n");
+	return 0;
+}
+
+
+

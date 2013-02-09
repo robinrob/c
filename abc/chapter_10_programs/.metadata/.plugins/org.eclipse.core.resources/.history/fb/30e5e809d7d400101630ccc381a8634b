@@ -1,0 +1,54 @@
+/* Functions for Doubly-Linked Lists. */
+
+#include "dllist.h"
+
+
+
+/* Creates a DATA list from an array of DATA values
+ * and returns a reference to the head of the list. */
+NODE* create_l(DATA *array, int n)
+{
+	int i;
+	NODE *p, *list;
+	p = malloc(sizeof(NODE));
+	list = p;
+
+	p -> prev = NULL;
+	for (i = 0; i < n - 1; ++i) {
+		NODE *tmp = p;
+		p -> data = *(array + i);
+		p -> next = malloc(sizeof(NODE));
+		p = p -> next;
+		p -> prev = tmp;
+	}
+	p -> data = *(array + n - 1);
+	p -> next = NULL;
+
+	return list;
+}
+
+
+
+//Counts the length of a list.
+int cnt_list(NODE *list)
+{
+	if (list == NULL) {
+		return 0;
+	}
+	else {
+		return cnt_list(list -> next) + 1;
+	}
+}
+
+/* Checks to see whether a list is a cycle. */
+boolean iscycle(NODE *list)
+{
+	int head_ad = (int) list;
+	while (list -> next != NULL) {
+		list = list -> next;
+		if (((int) list) == head_ad) {
+			return true;
+		}
+	}
+	return false;
+}

@@ -1,0 +1,14 @@
+/* Main function for Doubly-Linked List project. */
+
+#include "dllist.h"
+
+int main(void)
+{
+	NODE *list;
+
+	list = create_list(create_array5(), 5);
+	print_test(list);
+	ins_del_test(list);
+
+	return 0;
+}

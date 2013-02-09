@@ -1,0 +1,14 @@
+
+**** Build of configuration Debug for project isPrime ****
+
+make all 
+Building file: ../isPrime.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"isPrime.d" -MT"isPrime.d" -o"isPrime.o" "../isPrime.c"
+Finished building: ../isPrime.c
+ 
+Building target: isPrime
+Invoking: GCC C Linker
+gcc  -o"isPrime"  ./isPrime.o   
+Finished building target: isPrime
+ 

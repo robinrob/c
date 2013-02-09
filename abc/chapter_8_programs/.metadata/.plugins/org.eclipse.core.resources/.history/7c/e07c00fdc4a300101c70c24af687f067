@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+
+void quicksort(char **left, char **right);
+
+void swap_string(char **p, char **q);
+void print_list(char **a, int n);
+int string_val(char *s);

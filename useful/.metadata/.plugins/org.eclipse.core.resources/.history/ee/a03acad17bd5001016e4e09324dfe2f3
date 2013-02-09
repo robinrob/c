@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+union boolean {
+	unsigned bool : 1;
+};
+
+typedef union boolean boolean;

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;pipe/concurrent_sum.c&apos; to &apos;pipe.c&apos;" description="Rename resource &apos;concurrent_sum.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="concurrent_sum.c" name="pipe.c" stamp="1314805978211" updateReferences="true"/>
+</session>

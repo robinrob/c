@@ -1,0 +1,17 @@
+/* Program for testing redirection of input/output
+ * redirection.c
+ *
+ *  Created on: Jan 5, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+
+int main(void)
+{
+	char c;
+	while (scanf("%c", &c) == 1)
+		printf("%c%c", c, c);
+
+	return 0;
+}

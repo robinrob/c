@@ -1,0 +1,33 @@
+/* Creating a linked list from an array. */
+
+#include "sllist.h"
+
+int main(void)
+{
+	NODE *list;
+	DATA *d = create_array5();
+
+	list = create_list(d, 5);
+
+	print_test(list);
+//	sort_test(list);
+	cycle_test(list);
+//	concat_test(list);
+//	ins_del_test(list);
+//	del_dupl_test(list);
+//	copy_cat_test(list);
+//	list = copy_cat(list, create_list(create_array5(), 5));
+//	printf("List:\n");
+//	print_list(list);
+//	del_dupl_test(list);
+
+	free(list);
+
+	return 0;
+}
+
+
+
+
+
+

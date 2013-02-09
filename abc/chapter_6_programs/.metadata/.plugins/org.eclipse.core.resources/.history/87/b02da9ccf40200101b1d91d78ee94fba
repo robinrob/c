@@ -1,0 +1,17 @@
+/*
+ * find_root.h
+ *
+ *  Created on: Dec 8, 2010
+ *      Author: user
+ */
+
+#include <assert.h>
+#include <stdio.h>
+
+typedef double dbl;
+
+extern int cnt;
+extern const dbl eps;
+
+dbl bisection(dbl f(dbl x), dbl a, dbl b);
+dbl f(dbl x, int n);

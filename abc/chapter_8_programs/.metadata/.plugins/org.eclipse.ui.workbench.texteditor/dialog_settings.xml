@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="303" key="DIALOG_WIDTH"/>
+		<item value="92" key="DIALOG_Y_ORIGIN"/>
+		<item value="414" key="DIALOG_HEIGHT"/>
+		<item value="535" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="o3" key="selection"/>
+		<list key="findhistory">
+			<item value="str_o3"/>
+			<item value="getchar"/>
+			<item value="enter"/>
+			<item value="piv_n"/>
+			<item value="string_val"/>
+			<item value="v_p"/>
+			<item value="v_r"/>
+			<item value="v_l"/>
+		</list>
+		<list key="replacehistory">
+			<item value="o3"/>
+			<item value="n_piv"/>
+			<item value="&apos;enter&apos;"/>
+			<item value="str_val"/>
+			<item value="val_p"/>
+			<item value="val_r"/>
+			<item value="val_l"/>
+			<item value="N_ELEM"/>
+		</list>
+	</section>
+	<section name="org.eclipse.cdt.internal.ui.preferences.CTemplatePreferencePage$CEditTemplateDialog_dialogBounds">
+		<item value="610" key="DIALOG_WIDTH"/>
+		<item value="139" key="DIALOG_Y_ORIGIN"/>
+		<item value="326" key="DIALOG_HEIGHT"/>
+		<item value="102" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

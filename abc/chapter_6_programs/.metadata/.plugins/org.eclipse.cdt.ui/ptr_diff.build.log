@@ -1,0 +1,16 @@
+
+**** Build of configuration Debug for project ptr_diff ****
+
+make all 
+Building file: ../prt_diff.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"prt_diff.d" -MT"prt_diff.d" -o"prt_diff.o" "../prt_diff.c"
+../prt_diff.c: In function ‘main’:
+../prt_diff.c:16: warning: format ‘%ld’ expects type ‘long int’, but argument 2 has type ‘ptrdiff_t’
+Finished building: ../prt_diff.c
+ 
+Building target: ptr_diff
+Invoking: GCC C Linker
+gcc  -o"ptr_diff"  ./prt_diff.o   
+Finished building target: ptr_diff
+ 

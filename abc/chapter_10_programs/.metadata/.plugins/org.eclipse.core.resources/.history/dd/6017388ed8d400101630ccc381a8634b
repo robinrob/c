@@ -1,0 +1,14 @@
+/* Counting functions for Singly-Linked Lists. */
+
+#include "sllist.h"
+
+/* Counts the length of a list recursively. */
+int cnt_list(NODE *list)
+{
+	if (list == NULL) {
+		return 0;
+	}
+	else {
+		return cnt_list(list -> next) + 1;
+	}
+}

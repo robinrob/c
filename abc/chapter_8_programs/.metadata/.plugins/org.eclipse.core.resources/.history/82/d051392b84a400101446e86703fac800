@@ -1,0 +1,36 @@
+/*Program to sort a list of words using quicksort.*/
+
+#include "sort.h"
+
+#define MAXLIST 50
+#define MAXWORD 50
+
+int main(void)
+{
+  char *a[MAXLIST], s[MAXWORD];
+  int i, max_el;
+
+  i = 0;
+  while ((scanf("%s", s) == 1) && (i < MAXLIST)) {
+    if (strcmp(s, "endoflist") == 0) {
+      break;
+    }
+    *(a + i) = calloc(MAXWORD, sizeof(char));
+    strcpy(*(a + i), s);
+    ++i;
+  }
+  max_el = i;
+
+  printf("List before sort:\n");
+  print_list(a, a + max_el - 1);
+  printf("\nQuicksorting ...\n");
+  quicksort(a, a + max_el - 1);
+  printf("List after sort:\n");
+  print_list(a, a + max_el - 1);
+  
+  for (i = 0; i < max_el; ++i) {
+         free(*(a + i));
+    }
+
+  return 0;
+}

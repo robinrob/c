@@ -1,0 +1,21 @@
+
+**** Build of configuration Debug for project spawn ****
+
+make all 
+Building file: ../spawn.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"spawn.d" -MT"spawn.d" -o "spawn.o" "../spawn.c"
+../spawn.c: In function ‘main’:
+../spawn.c:24:3: warning: implicit declaration of function ‘spawnl’
+../spawn.c:27:3: warning: missing sentinel in function call
+Finished building: ../spawn.c
+ 
+Building target: spawn
+Invoking: Cross GCC Linker
+gcc  -o "spawn"  ./spawn.o   
+./spawn.o: In function `main':
+/home/robin/work/programming/c/chapter_12_programs/spawn/Debug/../spawn.c:24: undefined reference to `spawnl'
+collect2: ld returned 1 exit status
+make: *** [spawn] Error 1
+
+**** Build Finished ****

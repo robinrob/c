@@ -1,0 +1,43 @@
+
+**** Build of configuration Debug for project base_change ****
+
+make all 
+Building file: ../calc.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"calc.d" -MT"calc.d" -o "calc.o" "../calc.c"
+Finished building: ../calc.c
+ 
+Building file: ../error.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"error.d" -MT"error.d" -o "error.o" "../error.c"
+Finished building: ../error.c
+ 
+Building file: ../get.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"get.d" -MT"get.d" -o "get.o" "../get.c"
+Finished building: ../get.c
+ 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../print.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"print.d" -MT"print.d" -o "print.o" "../print.c"
+Finished building: ../print.c
+ 
+Building target: base_change
+Invoking: Cross GCC Linker
+gcc  -o "base_change"  ./calc.o ./error.o ./get.o ./main.o ./print.o   
+Finished building target: base_change
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project base_change ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****

@@ -1,0 +1,20 @@
+/* Miscellaneous functions for Doubly-Linked Lists. */
+
+#include "dllist.h"
+
+/* Returns a pointer to the NODE at the given list
+ * position in the given list. */
+NODE* get_node(NODE* list, int pos)
+{
+	int i = 0;
+	assert(pos >= 0);
+
+	while (i < pos) {
+		if (list == NULL) {
+			return list;
+		}
+		list = list -> next;
+		++i;
+	}
+	return list;
+}

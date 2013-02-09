@@ -1,0 +1,86 @@
+/* Header file for data project. */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
+
+typedef struct {
+	char *name;
+	int age;
+	int weight;
+} DATA;
+
+struct NODE {
+	DATA data;
+	struct NODE *next;
+};
+
+/* Sorting keys. */
+typedef enum {age, name, weight} sort_key;
+
+/* Boolean values */
+typedef enum {true, false} boolean;
+
+/* Ease-of-use typedef */
+typedef struct NODE NODE;
+
+/* Creates a DATA list from an array of DATA values
+ * and returns a reference to the head of the list. */
+NODE* create_l(DATA *array, int n);
+
+/* Prints a list of DATA values by following the links. */
+void print_list(NODE *list);
+
+/* Prints a list of DATA values using iteration. */
+void print_list_it(NODE *list);
+
+//Counts the length of a list.
+int cnt_list(NODE *list);
+
+/* Bubble-sorts a list of DATA values using the
+ * specified sorting key.
+ */
+void bubb_sort_list(NODE *list, sort_key key, void comp_func(NODE *, sort_key));
+
+/* Compares the data stored in the given node
+ * and the next one using the specified key value.
+ * The values are swapped if they are out of order.
+ */
+void compare(NODE *n, sort_key key);
+
+/* Swaps the data values of two nodes. */
+void swap(NODE *n1, NODE *n2);
+
+/* Concatenates list2 onto the end of list1,
+ * no matter what! */
+void concat(NODE *list1, NODE *list2);
+
+/* Concatenates list2 onto the end of list1. */
+NODE* concatenate(NODE *list1, NODE *list2);
+
+/* Checks to see if the two lists are equal. */
+boolean check_equal_lists(NODE* list1, NODE* list2);
+
+/* Checks to see if two DATA structures are equal or not. */
+boolean check_equal_data(DATA d1, DATA d2);
+
+/* Checks to see whether a list is a cycle. */
+boolean iscycle(NODE *list);
+
+/* Turns a cycling list into a straight & finite list. */
+void decycle(NODE *list);
+
+/* Inserts an element into the given list, at the
+ * given list position (starting from 1). */
+void insert(DATA d, NODE **list, int pos);
+
+/* Deletes an element at the given list position
+ * in the given list (starting from 1).
+ */
+void delete(NODE **list, int pos);
+
+/* Returns a pointer to the NODE at the given list
+ * position in the given list. */
+NODE* get_node(NODE* list, int pos);
+

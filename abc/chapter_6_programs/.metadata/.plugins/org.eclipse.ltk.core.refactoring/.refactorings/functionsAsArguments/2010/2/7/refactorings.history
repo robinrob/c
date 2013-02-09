@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;functionsAsArguments/functionsAsArguments&apos; to &apos;functionsAsArguments.c&apos;" description="Rename resource &apos;functionsAsArguments&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="functionsAsArguments" name="functionsAsArguments.c" stamp="1265911569955" updateReferences="true"/>
+</session>

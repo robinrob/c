@@ -1,0 +1,117 @@
+/*
+ * playText.c
+ *
+ *  Created on: Feb 1, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+#include <time.h>
+
+#define DURATION 1
+
+void printA(void);
+void printB(void);
+void printC(void);
+void printD(void);
+
+int main(void)
+{
+	/*char c;
+
+	while(scanf("%c", &c)) {
+		if (c == 'a')
+			printA();
+		else if (c == 'b')
+			printB();
+		else if (c == 'c')
+			printC();
+	}*/
+	int t0;
+	int i;
+	printD();
+	for (i = 0; i < 5; ++i) {
+		t0 = time(NULL);
+		printA();
+		while (!(time(NULL) == t0 + DURATION));
+		t0 = time(NULL);
+		printB();
+		while (!(time(NULL) == t0 + DURATION));
+		t0 = time(NULL);
+		printC();
+		while (!(time(NULL) == t0 + DURATION));
+	}
+
+	return 0;
+}
+
+void printA(void)
+{
+	printf(
+			"           ________              \n"
+			"          /        \\            \n"
+			"         /    /\\    \\          \n"
+			"        /    /  \\    \\         \n"
+			"       /    /    \\    \\        \n"
+			"      /    /______\\    \\       \n"
+			"     /    /        \\    \\      \n"
+			"    /    /__________\\    \\     \n"
+			"   /    /            \\    \\    \n"
+			"  /    /              \\    \\   \n"
+			" /    /                \\    \\  \n"
+			"/____/                  \\____\\ \n"
+			);
+}
+
+void printB(void)
+{
+	printf(
+			"_____             \n"
+			"|    |            \n"
+			"|    |            \n"
+			"|    |            \n"
+			"|    |            \n"
+			"|    |____________\n"
+			"|                |\n"
+			"|     ______     |\n"
+			"|    |      |    |\n"
+			"|    |______|    |\n"
+			"|                |\n"
+			"|________________|\n");
+}
+
+void printC(void)
+{
+	printf(
+			" ________________ \n"
+			"|                | \n"
+			"|     ___________|\n"
+			"|    |           \n"
+			"|    |           \n"
+			"|    |           \n"
+			"|    |           \n"
+			"|    |           \n"
+			"|    |           \n"
+			"|    |___________\n"
+			"|                |\n"
+			"|________________|\n"
+			);
+}
+
+void printD(void)
+{
+	printf(
+			" _________________    \n"
+			"|                 \\  \n"
+			"|     ________     |  \n"
+			"|    |        \\    | \n"
+			"|    |        |    |  \n"
+			"|    |        |    |  \n"
+			"|    |        |    |  \n"
+			"|    |        |    |  \n"
+			"|    |        |    |  \n"
+			"|    |________|    |  \n"
+			"|                  |  \n"
+			"|__________________|  \n"
+			);
+}

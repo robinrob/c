@@ -1,0 +1,27 @@
+/* Recursive list functions. */
+
+LINK string_to_list(char s[])
+{
+	LINK head;
+
+	if (s[0] == '\0')
+		return NULL;
+	else {
+		head = malloc(sizeof(ELEMENT));
+		head -> d = s[0];
+		head -> next = string_to_list(s + 1);
+		return head;
+	}
+}
+
+/* Count a list recursively. */
+
+#include "list.h"
+
+int count(LINK head)
+{
+	if (head == NULL)
+		return 0;
+	else
+		return (1 + count(head -> next));
+}

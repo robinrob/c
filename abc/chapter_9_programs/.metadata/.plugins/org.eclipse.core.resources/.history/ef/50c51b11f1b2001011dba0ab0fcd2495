@@ -1,0 +1,19 @@
+/* A program to test whether an input character is a
+ * tab or not.
+ */
+
+#include <stdio.h>
+
+int is_tab(char c);
+
+int main(void)
+{
+	char c = getchar();
+	if (is_tab(c)) {
+		printf("c is a tab!\n");
+	}
+	else {
+		printf("c is: %c\n", c);
+	}
+	return 0;
+}

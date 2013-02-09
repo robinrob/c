@@ -1,0 +1,130 @@
+#include "poker.h"
+
+//Checks whether or not the given hand contains a flush.
+int is_straight_flush(card h[5])
+{
+    int i;
+
+    qsort(h, 5, sizeof(card), cmp);
+    for (i = 1; i < 5; ++i) {
+    	if (h[i].suit != h[0].suit || h[i].pips != (h[0].pips + i)) {
+    		return 0;
+    	}
+    }
+    return 1;
+}
+
+//Checks whether or not the given hand contains a four-of-a-kind.
+int is_four_kind(card h[5])
+{
+	int i, cnt = 0;
+	qsort(h, 5, sizeof(card), cmp);
+	for (i = 4; i > 0; --i) {
+		if (h[i].pips == h[i - 1].pips) {
+			++cnt;
+		}
+		else {
+			cnt = 0;
+		}
+		if (cnt == 3) {
+			return 1;
+		}
+	}
+	return 0;
+}
+
+//Checks whether or not the given hand contains a full house.
+int is_full_house(card h[5])
+{
+	qsort(h, 5, sizeof(card), cmp);
+	if (is_three_kind(h + 2, 3) && is_pair(h, 2)) {
+		return 1;
+	}
+	if (is_three_kind(h, 3) && is_pair(h + 3, 2)) {
+		return 1;
+	}
+	return 0;
+}
+
+//Checks whether or not the given hand contains a flush.
+int is_flush(card h[5])
+{
+    int i;
+
+    for (i = 1; i < 5; ++i) {
+    	if (h[i].suit != h[0].suit) {
+    		return 0;
+    	}
+    }
+    return 1;
+}
+
+//Checks whether or not the given hand contains a straight.
+int is_straight(card h[5])
+{
+	int i;
+	qsort(h, 5, sizeof(card), cmp);
+	for (i = 1; i < 5; ++i) {
+		if (h[i].pips != (h[0].pips + i)) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+//Checks whether or not the given hand contains a three-of-a-kind.
+int is_three_kind(card h[], int n)
+{
+	int i, cnt = 0;
+	qsort(h, n, sizeof(card), cmp);
+	for (i = n - 1; i > 0; --i) {
+		if (h[i].pips == h[i - 1].pips) {
+			++cnt;
+		}
+		else {
+			cnt = 0;
+		}
+		if (cnt == 2) {
+			return 1;
+		}
+	}
+	return 0;
+}
+
+//Checks whether or not the given hand contains two pairs.
+int is_two_pair(card h[])
+{
+	int i, cnt = 0;
+	qsort(h, 5, sizeof(card), cmp);
+	for (i = 4; i > 0; --i) {
+		if (is_pair(h + i, 2)) {
+			++cnt;
+		}
+		if (cnt == 2) {
+			return 1;
+		}
+	}
+	return 0;
+}
+
+//Checks whether or not the given hand contains a pair.
+int is_pair(card h[], int n)
+{
+	int i;
+	qsort(h, n, sizeof(card), cmp);
+	for (i = n - 1; i > 0; --i) {
+		if (h[i].pips == h[i - 1].pips) {
+			return 1;
+		}
+	}
+	return 0;
+}
+
+//Comparison function to use with qsort().
+int cmp(const void *vp, const void *vq)
+{
+	const int *p = &(((card *) vp) -> pips);
+	const int *q = &(((card *) vq) -> pips);
+	int diff = *q - *p;
+	return (diff <= 0) ? ((diff < 0) ? +1 : 0) : -1;
+}

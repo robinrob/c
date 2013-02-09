@@ -1,0 +1,16 @@
+
+**** Build of configuration Debug for project fibonacci ****
+
+make all 
+Building file: ../fibonacci.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fibonacci.d" -MT"fibonacci.d" -o "fibonacci.o" "../fibonacci.c"
+Finished building: ../fibonacci.c
+ 
+Building target: fibonacci
+Invoking: Cross GCC Linker
+gcc  -o "fibonacci"  ./fibonacci.o   
+Finished building target: fibonacci
+ 
+
+**** Build Finished ****

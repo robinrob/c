@@ -1,0 +1,36 @@
+/* Some arithmetic operations with pointers
+ * pointers2.c
+ *
+ *  Created on: Feb 4, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+
+void printHello(void);
+
+int main(void)
+{
+	int i = 3, j = 5, *p = &i, *q = &j, *r;
+
+	printf("%s%d\n%s%d\n%s%d\n%s%d\n",
+			"p == &i: ", p == &i	, //1
+			"* * & p: ", * * & 	p,   //3
+			/*"r = &x", r = &x,*/		//address of x
+			"7 * * p / * q + 7: ", 7 * * p / * q + 7,  //1
+			"* (r = &j) *= *p: ", * (r = &j) *= *p); //15
+
+	void *x = &printHello;
+	void *y = &main;
+	printf("%p\n%p\n%p\n%p\n", x, &x, y, &y);
+
+	printf("\nSome interesting pointer facts:\n");
+	printf("\n%s%p\n%s%d\n%s%p", "p: ", p, "*p: ", *p, "&p: ", &p);
+
+	return 0;
+}
+
+void printHello(void)
+{
+	printf("Hello!\n");
+}

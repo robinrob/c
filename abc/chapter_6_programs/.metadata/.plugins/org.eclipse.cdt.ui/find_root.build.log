@@ -1,0 +1,14 @@
+
+**** Build of configuration Debug for project find_root ****
+
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o"main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: find_root
+Invoking: GCC C Linker
+gcc  -o"find_root"  ./bisection.o ./fct.o ./main.o   
+Finished building target: find_root
+ 

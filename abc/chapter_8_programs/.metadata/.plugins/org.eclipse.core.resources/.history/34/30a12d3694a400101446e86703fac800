@@ -1,0 +1,41 @@
+/* Testing quicksort. */
+
+#include "sort.h"
+
+int main(void)
+{
+	int a[N_ELEM];
+	long int i;
+	
+	srand(time(NULL));
+	for (i = 0; i < N_ELEM; ++i) {
+		a[i] = i;
+	}
+	printf("Array before sort:\n");
+	print_arr(a, N_ELEM);
+	start_time();
+	quicksort(a, a + N_ELEM - 1);
+	printf("Sorted array:\n");
+	print_arr(a, N_ELEM);
+	putchar('\n');
+	print_time();
+	return 0;
+}
+
+void print_arr(int a[], long int n)
+{
+	long int i;
+	
+	for (i = 0; i < 5; ++i) {
+		printf("%5d ", a[i]);
+	}
+	printf("  ...\n");
+	for (i = n / 2; i < (n / 2 + 5); ++i) {
+		printf("%5d ", a[i]);
+	}
+	printf("  ...\n");
+	for (i = n - 5; i < n; ++i) {
+		printf("%5d ", a[i]);
+	}
+	printf("\n");
+}

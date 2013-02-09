@@ -1,0 +1,16 @@
+/*Program to sort a list of words using quicksort.*/
+
+#include "sort.h"
+
+int main(void)
+{
+  char *a[] = {"a", "b", "c", "d"};
+  int n = 4;
+  printf("List before sort:\n");
+  print_list(a, n);
+  printf("List after sort:\n");
+  quicksort(a, n, a, a + n - 1);
+  print_list(a, n);
+  
+  return 0;
+}

@@ -1,0 +1,77 @@
+/* Quicksort! Pointer version with macros. */
+
+#include "sort.h"
+
+#define swap(x, y)			{ int t; t = x; x = y; y = t; }
+#define order(x, y)			if (x > y) swap(x, y)
+#define o2(x, y)			order(x, y)
+#define o3(x, y, z)			o2(x, y); o2(x, z); o2(y, z)
+#define o4(x, y, z, a)		o3(x, y, z); o3(x, y, a); o3(x, z, a); o3(y, z, a)
+#define o5(x, y, z, a, b)	o4(x, y, z, a); o4(x, y, z, b); o4(x, y, a, b);\
+	o4(x, z, a, b); o4(y, z, a, b)
+
+typedef enum {yes, no} yes_no;
+
+static yes_no find_pivot(int *left, int *right, int *pivot_ptr);
+static int *partition(int *left, int *right, int pivot);
+
+void quicksort(int *left, int *right)
+{
+	int *p, pivot;
+
+	//printf("*left: %d, *right: %d\n", *left, *right);
+	/*if (getchar() != '\n') {
+		exit(1);
+	}*/
+
+	printf("hello this is working!\n");
+	if (find_pivot(left, right, &pivot) == yes) {
+		p = partition(left, right, pivot);
+		quicksort(left, p - 1);
+		quicksort(p, right);
+	}
+}
+
+static yes_no find_pivot(int *left, int *right, int *pivot_ptr)
+{
+	int a, b, c, d, e, step, *p;
+
+	step = (right - left) / 4;
+	a = *left;
+	b = *(left + step);
+	c = *(left + step + step);
+	d = *(left + step + step + step);
+	e = *right;
+
+	o5(a, b, c, d, e);
+	if (a < b) {
+		*pivot_ptr = b;
+		//printf("pivot: %d\n", *pivot_ptr);
+		return yes;
+	}
+	for (p = left + 1; p <= right; ++p) {
+		if (*p != *left) {
+			*pivot_ptr = (*p < *left) ? *left : *p;
+			//printf("pivot: %d\n", *pivot_ptr);
+			return yes;
+		}
+	}
+	return no;
+}
+
+static int *partition(int *left, int *right, int pivot)
+{
+	while (left <= right) {
+		while (*left < pivot)
+			++left;
+		//printf("done\n");
+		while (*right >= pivot)
+			--right;
+		if (left < right) {
+			swap(*left, *right);
+			++left;
+			--right;
+		}
+	}
+	return left;
+}

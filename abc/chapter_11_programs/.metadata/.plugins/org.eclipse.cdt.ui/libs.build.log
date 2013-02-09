@@ -1,0 +1,16 @@
+
+**** Build of configuration Debug for project libs ****
+
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: libs
+Invoking: Cross GCC Linker
+gcc  -o "libs"  ./gcalloc.o ./gfopen.o ./main.o   
+Finished building target: libs
+ 
+
+**** Build Finished ****

@@ -1,0 +1,47 @@
+#include "poker.h"
+
+
+//Returns a card with the given suit and rank.
+card assign_values(int pips, suit suit)
+{
+    card c;
+
+    if (pips == 1) {
+    	c.pips = 14;
+    }
+    else {
+    	c.pips = pips;
+    }
+    c.suit = suit;
+    return c;
+}
+
+//Shuffles an array of 52 cards.
+void shuffle(card deck[52])
+{
+    int i, j;
+
+    for (i = 0; i < 52; ++i) {
+    	j = rand() % 52;
+    	swap(&deck[i], &deck[j]);
+    }
+}
+
+//Swaps the values of the two given cards.
+void swap(card *p, card *q)
+{
+    card tmp;
+
+    tmp = *p;
+    *p = *q;
+    *q = tmp;
+}
+
+//Deals the cards from a deck into an array of hands.
+void deal_the_cards(card deck[52], card hand[5])
+{
+    int card_cnt = 0, i;
+
+    for (i = 0; i < 5; ++i)
+	    hand[i] = deck[card_cnt++];
+}

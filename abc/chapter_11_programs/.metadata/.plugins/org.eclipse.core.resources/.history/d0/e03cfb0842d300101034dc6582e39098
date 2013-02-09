@@ -1,0 +1,13 @@
+#include "g_lib.h"
+
+int main(void)
+{
+    char *s = gcalloc(6, sizeof(char));
+    s = 'R', s + 1 = 'o', s + 2 = 'b', s + 3 = 'i', s + 4 = 'n', s + 5 = '\n',
+    printf("%s", s);
+    free(c);
+    FILE *file = gfopen("test.txt", "w");
+    fprintf("Hello Robin\n");
+    fclose(file);
+    return 0;
+}

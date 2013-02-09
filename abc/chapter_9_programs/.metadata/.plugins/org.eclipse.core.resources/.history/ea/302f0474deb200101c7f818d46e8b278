@@ -1,0 +1,71 @@
+/* A program to sort a list of students which each have
+ * a name, student number and a grade. Students are sorted
+ * by grade and those that have the same grade are sorted
+ * alphabetically by name.
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX_NAME 20
+#define MAX_LIST 20
+
+typedef struct
+{
+	char name[MAX_NAME];
+	int number;
+	char grade;
+} student;
+
+void print_students(student *arr, int n);
+int read_name(char *name);
+
+int main(void)
+{
+	student *students = calloc(MAX_LIST, sizeof(student));
+	int i;
+
+	i = 0;
+	while (read_name(students[i].name))
+	{
+		scanf("%d", &(students[i].number));
+		scanf("%c", &(students[i].grade));
+		++i;
+	}
+	const int n_students = i;
+
+	print_students(students, n_students);
+
+	return 0;
+}
+
+int read_name(char *name)
+{
+	char c;
+	int i;
+
+	i = 0;
+	while ((c = getchar()) != '\\') {
+		name[i] = c;
+		printf("done\n");
+		++i;
+	}
+	if (i == 0) {
+		return 0;
+	}
+	else {
+		name[i] = '\0';
+		return 1;
+	}
+}
+
+void print_students(student *arr, int n)
+{
+	int i;
+	for (i = 0; i < n; ++i) {
+		printf("name: %s, number: %d, grade: %c\n",
+				(arr + i) -> name,
+				((arr + i) -> number),
+				((arr + i) -> grade));
+	}
+}

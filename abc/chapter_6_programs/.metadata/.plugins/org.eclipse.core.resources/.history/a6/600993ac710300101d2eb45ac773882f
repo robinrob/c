@@ -1,0 +1,31 @@
+/* Checking memory address of various to see if they are stored contiguously.
+ * variable_locations.c
+ *
+ *  Created on: Dec 9, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+
+int main(void)
+{
+	char a, b, c, *p, *q, *r;
+
+	printf("%s%p\n%s%p\n%s%p\n%s%p\n%s%p\n%s%p\n",
+			"&a: ", &a,
+			"&b: ", &b,
+			"&c: ", &c,
+			"&p: ", &p,
+			"&q: ", &q,
+			"&r: ", &r);
+
+	int d, e, f;
+
+	printf("\n");
+	printf("%s%p\n%s%p\n%s%p\n",
+			"&d = ", &d,
+			"&e = ", &e,
+			"&f = ", &f);
+
+	return 0;
+}

@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+
+extern char *list[];
+extern int N_WORDS;
+
+void quicksort(char **list, char **n, char **left, char **right);
+
+void swap_string(char **p, char **q);
+void print_list(char **a, int n);
+int string_val(char *s);

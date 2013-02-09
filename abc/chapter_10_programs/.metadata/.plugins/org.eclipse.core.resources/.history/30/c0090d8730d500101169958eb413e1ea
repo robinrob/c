@@ -1,0 +1,24 @@
+/* Demonstration of swapping the data of two nodes. */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct NODE {
+	int id;
+	struct NODE *next;
+};
+
+typedef struct NODE NODE;
+
+int main(void)
+{
+	NODE *list, *el2;
+	list -> id = 0;
+	list -> next = el2;
+	el2 -> id = 99;
+	el2 -> next = NULL;
+	print_list(list);
+	swap(list, list -> next);
+	print_list(list);
+	return 0;
+}

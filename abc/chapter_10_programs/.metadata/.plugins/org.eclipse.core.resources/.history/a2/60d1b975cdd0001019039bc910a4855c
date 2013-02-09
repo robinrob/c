@@ -1,0 +1,15 @@
+/* Mutually dependent struct definitions ... */
+
+struct node {
+	int child_no;
+	DATA d;
+	struct node sib;
+};
+
+typedef struct spouse {
+	int age;
+	char name[10];
+	spouse spouse;
+} spouse;
+
+

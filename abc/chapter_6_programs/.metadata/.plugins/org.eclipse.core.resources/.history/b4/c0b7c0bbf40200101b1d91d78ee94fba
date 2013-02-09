@@ -1,0 +1,23 @@
+/*
+ * fct.c
+ *
+ *  Created on: Dec 8, 2010
+ *      Author: user
+ */
+
+#include "find_root.h"
+
+dbl f(dbl x, int order)
+{
+	double fct_value = 0.0;
+	int i, j;
+
+	for (i = 1; i < order; ++i) {
+		double term = x;
+		for (j = 1; j < i; ++j) {
+			term *= x;
+		}
+	}
+
+	return (x * x * x * x * x - 7.0 * x - 3.0);
+}

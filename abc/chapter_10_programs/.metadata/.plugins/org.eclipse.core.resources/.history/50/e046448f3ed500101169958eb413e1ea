@@ -1,0 +1,12 @@
+/* Function testing functions. */
+
+
+/* Tests list printing functions. */
+void print_test(NODE *list)
+{
+	printf("The list:\n");
+	print_list(list);
+
+	printf("In reverse:\n");
+	print_list_reverse(list);
+}

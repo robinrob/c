@@ -1,0 +1,66 @@
+/* Quicksort! Pointer version with macros. */
+
+#include "sort.h"
+
+typedef enum {yes, no} yes_no;
+
+static yes_no find_pivot(char **left, char **right, char **pivot_ptr);
+static char **partition(char **left, char **right, char *pivot);
+
+void quicksort(char **left, char **right)
+{
+  char **p;
+  char *pivot;
+
+  //printf("quicksort: sublist: \n");
+  //print_list(left, right);
+
+  if (find_pivot(left, right, &pivot) == yes) {
+    p = partition(left, right, pivot);
+    quicksort(left, p - 1);
+    quicksort(p, right);
+  }
+}
+
+static yes_no find_pivot(char **left, char **right, char **pivot_ptr)
+{
+  char **p;
+
+  char *a = *left;
+  char *b = *(left + (right - left) / 2);
+  char *c = *right;
+
+  str_o3(a, b, c);
+
+  if (strcmp(a, b) == -1) {
+    *pivot_ptr = b;
+    return yes;
+  }
+  if (strcmp(b, c) == -1) {
+    *pivot_ptr = c;
+    return yes;
+  }
+  for (p = left + 1; p <= right; ++p) {
+    if (strcmp(*p, *left) != 0) {
+        *pivot_ptr = (strcmp(*p, *left) == -1) ? *left : *p;
+      return yes;
+    }
+  }
+  return no;
+}
+
+static char **partition(char **left, char **right, char *pivot)
+{
+  while (left <= right) {
+    while (strcmp(*left, pivot) == -1)
+      ++left;
+    while (strcmp(*right, pivot) >= 0)
+      --right;
+    if (left < right) {
+      swap_string(left, right);
+      ++left;
+      --right;
+    }
+  }
+  return left;
+}

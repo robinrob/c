@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void quicksort(int *, int *);
+void print_arr(int a[], long int n);
+void start_time(void);
+double print_time(void);
+

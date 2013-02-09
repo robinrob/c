@@ -1,0 +1,51 @@
+
+**** Build of configuration Debug for project dllist ****
+
+make all 
+Building file: ../check.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"check.d" -MT"check.d" -o "check.o" "../check.c"
+Finished building: ../check.c
+ 
+Building file: ../cnt.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cnt.d" -MT"cnt.d" -o "cnt.o" "../cnt.c"
+Finished building: ../cnt.c
+ 
+Building file: ../create.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"create.d" -MT"create.d" -o "create.o" "../create.c"
+Finished building: ../create.c
+ 
+Building file: ../ins_del.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ins_del.d" -MT"ins_del.d" -o "ins_del.o" "../ins_del.c"
+Finished building: ../ins_del.c
+ 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../misc.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"misc.d" -MT"misc.d" -o "misc.o" "../misc.c"
+Finished building: ../misc.c
+ 
+Building file: ../print.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"print.d" -MT"print.d" -o "print.o" "../print.c"
+Finished building: ../print.c
+ 
+Building file: ../test.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test.d" -MT"test.d" -o "test.o" "../test.c"
+Finished building: ../test.c
+ 
+Building target: dllist
+Invoking: Cross GCC Linker
+gcc  -o "dllist"  ./check.o ./cnt.o ./create.o ./ins_del.o ./main.o ./misc.o ./print.o ./test.o   
+Finished building target: dllist
+ 
+
+**** Build Finished ****

@@ -1,0 +1,27 @@
+/* Making 'hailstones' :\
+ * hailstones.c
+ *
+ *  Created on: Feb 1, 2010
+ *      Author: user
+ */
+
+#include <stdio.h>
+
+int main(void)
+{
+	int n;
+	printf("Enter an integer: ");
+	scanf("%d", &n);
+	hailstones(n);
+	return 0;
+}
+
+void hailstones(int n)
+{
+	while (!(n == 1)) {
+		if (!(n % 2))
+			printf("%d ", n /= 2);
+		else
+			printf("%d ", n = 3 * n + 1);
+	}
+}

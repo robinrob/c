@@ -1,0 +1,15 @@
+
+**** Build of configuration Debug for project c_standard ****
+
+make all 
+Building file: ../c_standard.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"c_standard.d" -MT"c_standard.d" -o "c_standard.o" "../c_standard.c"
+../c_standard.c:6:9: error: expected declaration specifiers or ‘...’ before string constant
+../c_standard.c:6:2: warning: data definition has no type or storage class
+../c_standard.c:6:2: warning: type defaults to ‘int’ in declaration of ‘printf’
+../c_standard.c:6:2: error: conflicting types for ‘printf’
+../c_standard.c:6:9: note: a parameter list with an ellipsis can’t match an empty parameter name list declaration
+make: *** [c_standard.o] Error 1
+
+**** Build Finished ****
