@@ -1,7 +1,0 @@
-#include <stdio.h>
-
-int main(void)
-{
-    int *a = gcalloc(5, sizeof(int));
-    return 0;
-}

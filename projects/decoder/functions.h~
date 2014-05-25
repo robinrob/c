@@ -1,9 +1,0 @@
-/* Header file for useful functions in wordScrambler. */
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int isAlphanumeric(char c);
-int isLowerCase(char c);
-int isUpperCase(char c);
-int isNumeric(char c);
