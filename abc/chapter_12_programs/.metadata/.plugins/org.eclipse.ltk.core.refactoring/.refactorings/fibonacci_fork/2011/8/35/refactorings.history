@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;fibonacci_fork/fibonacci.c&apos; to &apos;fibonacci_fork.c&apos;" description="Rename resource &apos;fibonacci.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="fibonacci.c" name="fibonacci_fork.c" stamp="1314806300528" updateReferences="true"/>
-</session>

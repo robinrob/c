@@ -1,8 +1,0 @@
-#include <stdio.h>
-
-int main(void)
-{
-    int *a = gcalloc(5, sizeof(int));
-    FILE *file = gfopen("test.txt", "w");
-    return 0;
-}

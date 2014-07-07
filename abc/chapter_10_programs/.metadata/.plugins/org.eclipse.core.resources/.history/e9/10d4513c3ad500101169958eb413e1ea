@@ -1,8 +1,0 @@
-/* Header file for testing functions. */
-
-/* Tests list printing functions. */
-void print_test(NODE *list);
-
-/* Tests sorting function. */
-void sort_test(NODE *list);
-

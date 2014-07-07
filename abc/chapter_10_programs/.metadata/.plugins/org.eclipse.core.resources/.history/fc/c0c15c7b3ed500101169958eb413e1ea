@@ -1,7 +1,0 @@
-/* Function testing functions. */
-
-
-void print_test(NODE *list)
-{
-
-}

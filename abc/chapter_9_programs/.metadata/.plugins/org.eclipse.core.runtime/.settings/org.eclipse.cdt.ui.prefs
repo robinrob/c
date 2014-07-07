@@ -1,9 +1,0 @@
-#Thu Aug 18 14:57:56 BST 2011
-spelling_locale_initialized=true
-useAnnotationsPrefPage=true
-content_assist_disabled_computers=org.eclipse.cdt.ui.parserProposalCategory\u0000org.eclipse.cdt.ui.textProposalCategory\u0000
-spelling_locale=en_GB
-eclipse.preferences.version=1
-sourceHoverBackgroundColor=190,223,255
-useQuickDiffPrefPage=true
-org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="org.eclipse.cdt.core.cHeader.contenttype_context" deleted\="false" description\="Default template for newly created C header files" enabled\="true" id\="org.eclipse.cdt.ui.text.codetemplates.cheaderfile" name\="Default C header template">//</template></templates>

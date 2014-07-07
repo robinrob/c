@@ -1,4 +1,0 @@
-/* Insertion & deletion functions. */
-
-#include "sllist.h"
-

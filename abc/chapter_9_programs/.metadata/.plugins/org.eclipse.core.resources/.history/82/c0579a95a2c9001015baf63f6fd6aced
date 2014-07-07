@@ -1,4 +1,0 @@
-//Header file for bcd project.
-
-#include <limits.h>
-#include <stdio.h>

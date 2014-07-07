@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;callByReference/callByReference&apos;" deleteContents="false" description="Delete resource &apos;callByReference/callByReference&apos;" element1="/callByReference/callByReference" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1265287191107"/>&#x0A;<refactoring comment="Delete resource &apos;mergeSort&apos;" deleteContents="false" description="Delete resource &apos;mergeSort&apos;" element1="/mergeSort" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1265394856205"/>
-</session>

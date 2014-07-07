@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;spawn/execl.c&apos; to &apos;spawn.c&apos;" description="Rename resource &apos;execl.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="execl.c" name="spawn.c" stamp="1314804631754" updateReferences="true"/>
-</session>

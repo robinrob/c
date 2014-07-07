@@ -1,3 +1,0 @@
-/* Header file for g_lib.a library. */
-
-void *gcalloc(int n, unsigned sizeof_something);

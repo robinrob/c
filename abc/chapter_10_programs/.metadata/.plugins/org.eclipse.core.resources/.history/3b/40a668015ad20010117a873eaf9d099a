@@ -1,3 +1,0 @@
-functions.d functions.o: ../functions.c ../sllist.h
-
-../sllist.h:

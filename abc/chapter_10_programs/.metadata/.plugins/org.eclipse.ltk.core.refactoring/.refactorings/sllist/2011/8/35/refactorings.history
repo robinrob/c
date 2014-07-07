@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;sllist/list.h&apos; to &apos;sllist.h&apos;" description="Rename resource &apos;list.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="list.h" name="sllist.h" stamp="1314633419596" updateReferences="true"/>
-</session>

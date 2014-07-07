@@ -1,8 +1,0 @@
-//A faulty union definition.
-
-#include "poker.h"
-
-int main(void)
-{
-	card ;
-}
